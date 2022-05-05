@@ -15,28 +15,28 @@
   <header class="page-header">
     <!-- !шапка -->
     <div class="page-header__wrapper wrapper">
-      <ul class="page-header__logo-list logo-list list wrapper">
+      <ul class="page-header__logo-list logo-list list">
         <li class="logo-list__item logo-list__item_media-mobile">
           <ul class="mobile-logo-list list">
             <li class="mobile-logo-list__item">
-              <a class="mobile-logo-list__logo logo logo-hover logo-ressed" href="index.html">
+              <a class="mobile-logo-list__logo logo logo_hover logo_ressed" href="#">
                 <img src="#" alt="Логотип Cat Energy" width="34" height="38" />
               </a>
             </li>
             <li class="mobile-logo-list__item">
-              <a class="mobile-logo-list__logo logo logo-hover logo-ressed" href="index.html">
+              <a class="mobile-logo-list__logo logo-text logo logo_hover logo_ressed" href="#">
                 <img src="#" alt="Логотип Cat Energy текстом" width="101" height="18" />
               </a>
             </li>
           </ul>
         </li>
         <li class="logo-list__item logo-list__item_media-tablet">
-          <a class="logo-list__logo logo logo-hover logo-ressed" href="index.html">
+          <a class="logo-list__logo logo logo_hover logo_ressed" href="#">
             <img src="#" alt="Логотип Cat Energy" width="174" height="52" />
           </a>
         </li>
         <li class="logo-list__item logo-list__item_media-desktop">
-          <a class="logo-list__logo logo logo-hover logo-ressed" href="index.html">
+          <a class="logo-list__logo logo logo_hover logo_ressed" href="#">
             <img src="#" alt="Логотип Cat Energy" width="202" height="59" />
           </a>
         </li>
@@ -73,11 +73,11 @@
         <p class="section-offer__text-title">
           Функциональное питание для котов
         </p>
-        <p class="section-offer__text">Занялся собой? Займись котом!</p>
+        <p class="section-offer__slogan">Занялся собой? Займись котом!</p>
         <div class="section-offer__container-image">
           <!-- контейнер с картинкой стакана, я думаю она декоративная -->
         </div>
-        <a class="section-offer__link button button_hover button_pressed" href="Form.html">подобрать программу</a>
+        <a class="section-offer__link button button_hover button_pressed link" href="Form.html">подобрать программу</a>
       </div>
     </section>
     <section class="section-programm-food page-content__section-programm-food">
@@ -173,12 +173,12 @@
             <li class="nutrition-demo-slider__slide-item"></li>
           </ul>
           <div class="nutrition-demo-slider__controls">
-            <p class="nutrition-demo-slider__controls-text-was">было</p>
+            <p class="nutrition-demo-slider__controls-text-was">было <span class="visibalitihidden">толстым</span></p>
             <div class="nutrition-demo-slider__controls-rangs">
               <div class="nutrition-demo-slider__controls-inside-rangs"></div>
               <!-- эту можно сжать до кружка для переключения -->
             </div>
-            <p class="nutrition-demo-slider__controls-text-is">стало</p>
+            <p class="nutrition-demo-slider__controls-text-is">стало <span class="visibalitihidden">худым</span></p>
           </div>
         </div>
       </div>
@@ -186,7 +186,7 @@
   </main>
   <footer class="page-footer">
     <!-- !подвал -->
-    <section class="cooperation">
+    <section class="cooperation page-footer__cooperation page-footer__cooperation_position-desctop">
       <h2 class="visibalitihidden">Сотрудничество</h2>
       <p class="cooperation__text">приглашаем к сотрудничеству дилеров!</p>
       <div class="cooperation__addres">
@@ -201,11 +201,48 @@
       </p>
       <div class="page-map__map">
         <!-- нужен чтобы от него спозиционировать элемент значка мест положения на карте -->
-        <iframe src="" frameborder="0"></iframe>
+        <iframe src="#"></iframe>
         <!-- вставим интерактивную карту с яндекса -->
       </div>
     </section>
-    
+    <div class="footer-bottom page-footer__footer-bottom">
+      <div class="footer-bottom__logo">
+        <a class="footer-bottom__link logo-text" href="#">
+          <img src="#" alt="Логотип Cat Energy текстом в подвале сайта" width="101" height="18" />
+        </a>
+      </div>
+      <div class="footer-bottom__social social">
+        <address>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="link" href="#" aria-label="Ссылка на Вконтакте">
+              svg
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="link" href="#" aria-label="Ссылка на Инстаграм">
+              svg
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="link" href="#" aria-label="Ссылка на Фэйсбук">
+              svg
+            </a>
+          </li>
+        </ul>
+      </address>
+      </div>
+      <div class="footer-bottom__coperayt footer-coperayt">
+        <p class="footer-coperayt__text">
+          <a class="footer-coperayt__link link" href="#" aria-label="Ссылка на представителя">HTML Academy</a>
+        </p>
+        <div class="footer-coperayt__logo-representative">
+          <a class="footer-coperayt__link-representative link" href="#" aria-label="Ссылка на представителя">
+            svg
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 
