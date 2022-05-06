@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="Функциональное питание для котов" />
+  <meta name="author" content="teprol" />
+  <title>Подбор программы питания</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <!-- !шапка -->
+    <div class="page-header__wrapper wrapper">
+      <a class="page-header__logo logo" href="#" aria-label="Ссылка на главную страницу">
+        <picture>
+          <source srcset="#" media="(min-width: 768px)">
+          <source srcset="#" media="(min-width: 768px)">
+          <img src="#" alt="Логотип Cat Energy" width="197" height="38">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <!-- !навигация в шапке -->
+        <button class="main-nav__button-toggle main-nav__button-toggle_mobile" type="button"
+          aria-label="Кнопка открытия Навигации"></button>
+        <!-- кнопка которая видна на мобилке, но по дефолту скрыта -->
+        <ul class="main-nav__list main-nav__list_tablet main-nav__list_desktop list">
+          <li
+            class="main-nav__item main-nav__item_active main-nav__item_active-desktop main-nav__item_hover main-nav__item_press">
+            главная
+          </li>
+          <li class="main-nav__item main-nav__item_hover main-nav__item_press">
+            каталог продукции
+          </li>
+          <li class="main-nav__item main-nav__item_hover main-nav__item_press">
+            подбор программы
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content">
+    <h1 class="visibalitihidden">Подбор программы питания</h1>
+    <header class="content-header wrapper">
+      <p class="content-header__title">Подбор программы</p>
+      <p class="content-header__slogan">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+    </header>
+    <form class="form-nutrition-program page-content__form-nutrition-program" action="https://echo.htmlacademy.ru"
+      method="post">
+      <fieldset class="form-nutrition-program__cat-info fieldset-cat-info">
+        <legend class="fieldset-cat-info__title visibalitihidden">Данные кота</legend>
+        <ul class="fieldset-cat-info__list list wrapper">
+          <li class="fieldset-cat-info__item">
+            <label class="fieldset-cat-info__name" for="cat-name">ИМЯ:*</label>
+            <input type="text" name="имя кота" id="cat-name" placeholder="барсик">
+          </li>
+          <li class="fieldset-cat-info__item">
+            <label class="fieldset-cat-info__weight" for="weight-cat">Вес (кг):*</label>
+            <input id="weight-cat" type="number" placeholder="7" min="1" name="вес кота">
+          </li>
+          <li class="fieldset-cat-info__item">
+            <label class="fieldset-cat-info__age" for="age-cat">Возраст (лет):</label>
+            <input id="age-cat" type="number" placeholder="7" min="1" name="возраст кота">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-nutrition-program__select-program-nutrition fieldset-select-program-nutrition">
+        <legend class="fieldset-select-program-nutrition__title visibalitihidden">Выбор программы</legend>
+        <ul class="fieldset-select-program-nutrition__list list wrapper">
+          <li class="fieldset-select-program-nutrition__item">
+            <label class="fieldset-select-program-nutrition__los-weight" for="losing-weight">похудение</label>
+            <input class="visibalitihidden" id="losing-weight" type="radio" name="выбор_программы_питания"
+              value="похудение" checked>
+          </li>
+          <li class="fieldset-select-program-nutrition__item">
+            <label class="fieldset-select-program-nutrition__mass-again" for="Mass-gain">Набор массы</label>
+            <input class="visibalitihidden" id="Mass-gain" type="radio" name="выбор программы питания"
+              value="Набор массы">
+          </li>
+          <li class="fieldset-select-program-nutrition__item">
+            <label class="fieldset-select-program-nutrition__advice" for="advice">Не знаю (Нужен ваш совет)</label>
+            <input class="visibalitihidden" id="advice" type="radio" name="выбор_программы_питания"
+              value="Не знаю (Нужен ваш совет)">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-nutrition-program__fio-owner-cat fieldset-fio-owner-cat">
+        <legend class="fieldset-fio-owner-cat__title">Контактные данные (владельца кота)</legend>
+        <ul class="fieldset-fio-owner-cat__list list wrapper">
+          <li class="fieldset-fio-owner-cat__item">
+            <label class="fieldset-fio-owner-cat__email" for="owner-mail">E-mail:*</label>
+            <span><input type="email" name="почта хозяина" id="owner-mail" placeholder="kuklachev@gmail.com">svg</span>
+          </li>
+          <li class="fieldset-fio-owner-cat__item">
+            <label class="fieldset-fio-owner-cat__tel" for="owner-tel">Телефон:*</label>
+            <span><input type="tel" name="телефон хозяина" id="owner-tel" placeholder="8 (960) 900-60-90">svg</span>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-nutrition-program__coment fieldset-coment">
+        <legend class="fieldset-coment__title">Комментарий</legend>
+        <div class="wrapper">
+          <textarea name="доп.информация" cols="30" rows="10"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="form-nutrition-program__add-info fieldset-add-info">
+        <legend class="fieldset-add-info__title">Дополнительно</legend>
+        <ul class="fieldset-add-info__list list wrapper">
+          <li class="fieldset-add-info__item">
+            <label for="no-sugar">сахарозаменитель</label>
+            <input type="checkbox" id="no-sugar" name="сахарозаменитель" checked>
+          </li>
+          <li class="fieldset-add-info__item">
+            <label for="woter">питьевая вода</label>
+            <input type="checkbox" id="woter" name="питьевая вода">
+          </li>
+          <li class="fieldset-add-info__item">
+            <label for="milk">молоко</label>
+            <input type="checkbox" id="milk" name="молоко">
+          </li>
+          <li class="fieldset-add-info__item">
+            <label for="vitamins">витамины</label>
+            <input type="checkbox" id="vitamins" name="витамины">
+          </li>
+        </ul>
+      </fieldset>
+      <div class="wrapper">
+        <input class="button" type="submit">
+        <p>* — Обязательные поля</p>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <!-- !подвал -->
+    <section class="cooperation page-footer__cooperation page-footer__cooperation_position-desctop">
+      <h2 class="visibalitihidden">Сотрудничество</h2>
+      <p class="cooperation__text">приглашаем к сотрудничеству дилеров!</p>
+      <div class="cooperation__addres">
+        <p class="cooperation__addres-top">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="cooperation__addres__bottom">Санкт-Петербург</p>
+      </div>
+    </section>
+    <section class="page-map">
+      <h2 class="visibalitihidden">Мы на карте</h2>
+      <p class="visibalitihidden">
+        Наш адрес ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </p>
+      <div class="page-map__map">
+        <!-- нужен чтобы от него спозиционировать элемент значка мест положения на карте -->
+        <iframe src="#"></iframe>
+        <!-- вставим интерактивную карту с яндекса -->
+      </div>
+    </section>
+    <div class="footer-bottom page-footer__footer-bottom">
+      <div class="footer-bottom__logo">
+        <a class="footer-bottom__link logo-footer" href="#">
+          <img src="#" alt="Логотип Cat Energy текстом в подвале сайта" width="101" height="18" />
+        </a>
+      </div>
+      <div class="footer-bottom__social social">
+        <address>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="link" href="#" aria-label="Ссылка на Вконтакте">
+                svg
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="link" href="#" aria-label="Ссылка на Инстаграм">
+                svg
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="link" href="#" aria-label="Ссылка на Фэйсбук">
+                svg
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-bottom__coperayt footer-coperayt">
+        <a class="link" href="#" aria-label="Ссылка на представителя">
+          <p class="footer-coperayt__text">HTML Academy</p>
+          <img src="#" alt="логотип представителя">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
