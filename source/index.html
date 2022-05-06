@@ -15,33 +15,13 @@
   <header class="page-header">
     <!-- !шапка -->
     <div class="page-header__wrapper wrapper">
-      <ul class="page-header__logo-list logo-list list">
-        <li class="logo-list__item logo-list__item_media-mobile">
-          <ul class="mobile-logo-list list">
-            <li class="mobile-logo-list__item">
-              <a class="mobile-logo-list__logo logo logo_hover logo_ressed" href="#">
-                <img src="#" alt="Логотип Cat Energy" width="34" height="38" />
-              </a>
-            </li>
-            <li class="mobile-logo-list__item">
-              <a class="mobile-logo-list__logo logo-text logo logo_hover logo_ressed" href="#">
-                <img src="#" alt="Логотип Cat Energy текстом" width="101" height="18" />
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="logo-list__item logo-list__item_media-tablet">
-          <a class="logo-list__logo logo logo_hover logo_ressed" href="#">
-            <img src="#" alt="Логотип Cat Energy" width="174" height="52" />
-          </a>
-        </li>
-        <li class="logo-list__item logo-list__item_media-desktop">
-          <a class="logo-list__logo logo logo_hover logo_ressed" href="#">
-            <img src="#" alt="Логотип Cat Energy" width="202" height="59" />
-          </a>
-        </li>
-      </ul>
-      <!-- создал такую структуру потому что для каждого устройства нужен свой логотип, а на мобилке их становится 2шт как отдельные файлы, решил воспользоваться такой структурой т.к пиктуре не подошел бы -->
+      <a class="page-header__logo logo" href="#" aria-label="Ссылка на главную страницу">
+        <picture>
+          <source srcset="" media="(min-width: 768px)">
+          <source srcset="" media="((min-width: 768px)">
+          <img src="#" alt="Логотип Cat Energy" width="197" height="38">
+        </picture>
+      </a>
       <nav class="main-nav">
         <!-- !навигация в шапке -->
         <button class="main-nav__button-toggle main-nav__button-toggle_mobile" type="button"
@@ -207,40 +187,36 @@
     </section>
     <div class="footer-bottom page-footer__footer-bottom">
       <div class="footer-bottom__logo">
-        <a class="footer-bottom__link logo-text" href="#">
+        <a class="footer-bottom__link logo-footer" href="#">
           <img src="#" alt="Логотип Cat Energy текстом в подвале сайта" width="101" height="18" />
         </a>
       </div>
       <div class="footer-bottom__social social">
         <address>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="link" href="#" aria-label="Ссылка на Вконтакте">
-              svg
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="link" href="#" aria-label="Ссылка на Инстаграм">
-              svg
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="link" href="#" aria-label="Ссылка на Фэйсбук">
-              svg
-            </a>
-          </li>
-        </ul>
-      </address>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="link" href="#" aria-label="Ссылка на Вконтакте">
+                svg
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="link" href="#" aria-label="Ссылка на Инстаграм">
+                svg
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="link" href="#" aria-label="Ссылка на Фэйсбук">
+                svg
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
       <div class="footer-bottom__coperayt footer-coperayt">
-        <p class="footer-coperayt__text">
-          <a class="footer-coperayt__link link" href="#" aria-label="Ссылка на представителя">HTML Academy</a>
-        </p>
-        <div class="footer-coperayt__logo-representative">
-          <a class="footer-coperayt__link-representative link" href="#" aria-label="Ссылка на представителя">
-            svg
-          </a>
-        </div>
+        <a class="link" href="#">
+          <p class="footer-coperayt__text" aria-label="Ссылка на представителя">HTML Academy</p>
+          <img src="" alt="">
+        </a>
       </div>
     </div>
   </footer>
