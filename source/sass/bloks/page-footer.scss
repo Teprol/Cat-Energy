@@ -1,0 +1,4 @@
+.page-footer {
+  @include noBox;
+  background-color: $background_footer;
+}

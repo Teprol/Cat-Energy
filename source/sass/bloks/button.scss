@@ -1,0 +1,4 @@
+.button {
+  @include noBox;
+  background-color: $background_good;
+}

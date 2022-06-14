@@ -1,1 +1,12 @@
 // Начните писать стили здесь
+@import "variables.scss";
+@import "global.scss";
+@import "fonts.scss";
+
+//*разные блоки
+@import "bloks/section-offer.scss";
+@import "bloks/button.scss";
+@import "bloks/section-programm-food.scss";
+@import "bloks/nutrition-demo.scss";
+@import "bloks/page-footer.scss";
+@import "bloks/cooperation.scss";
