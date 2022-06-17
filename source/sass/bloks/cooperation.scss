@@ -2,3 +2,28 @@
   @include noBox;
   background-color: $background_base;
 }
+
+.cooperation__text {
+  @include noBox;
+  @include font(16px, 18px, $font_cooperation);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cooperation__addres {
+  @include noBox;
+  @include font(14px, 20px, $font_base-card);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.cooperation__addres-top {
+  @include noBox;
+}
+
+.cooperation__addres__bottom {
+  @include noBox;
+}

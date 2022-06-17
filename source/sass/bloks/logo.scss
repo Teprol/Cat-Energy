@@ -1,0 +1,10 @@
+.logo {
+  @include noBox;
+
+  &_hover:hover {
+    opacity: $opacity_hover + 0.2;
+  }
+  &_press:active {
+    opacity: $opacity_press + 0.3;
+  }
+}

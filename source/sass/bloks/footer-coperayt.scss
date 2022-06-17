@@ -1,0 +1,9 @@
+.footer-coperayt {
+  @include noBox;
+}
+
+.footer-coperayt__link {
+  &_press:active {
+    opacity: $opacity_press;
+  }
+}

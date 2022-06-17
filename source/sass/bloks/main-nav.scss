@@ -1,0 +1,25 @@
+.main-nav__item {
+  @include noBox;
+}
+
+.main-nav__link {
+  display: inline-block;
+  font-family: "Oswald", Arial;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include noBox;
+  @include font(20px, 20px, $font_base);
+
+  &_hover:hover {
+    opacity: $opacity_hover;
+  }
+
+  &_press:active {
+    opacity: $opacity_press;
+  }
+
+  &_active {
+    border-bottom: 2px solid $background_good;
+  }
+}

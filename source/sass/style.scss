@@ -4,9 +4,19 @@
 @import "fonts.scss";
 
 //*разные блоки
+@import "bloks/page.scss";
+@import "bloks/page-header.scss";
+@import "bloks/logo.scss";
+@import "bloks/main-nav.scss";
+@import "bloks/page-content.scss";
 @import "bloks/section-offer.scss";
 @import "bloks/button.scss";
 @import "bloks/section-programm-food.scss";
+@import "bloks/advantages.scss";
 @import "bloks/nutrition-demo.scss";
+@import "bloks/nutrition-demo-slider.scss";
 @import "bloks/page-footer.scss";
 @import "bloks/cooperation.scss";
+@import "bloks/footer-bottom.scss";
+@import "bloks/logo-footer.scss";
+@import "bloks/footer-coperayt.scss";

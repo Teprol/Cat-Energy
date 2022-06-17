@@ -2,3 +2,56 @@
   @include noBox;
   background-color: $background_demo;
 }
+
+.nutrition-demo__stats-item {
+  @include noBox;
+
+  &_line {
+    @include noBox;
+    @include font(14px, 20px, $font_base);
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    .nutrition-demo__stats-title {
+      font: inherit;
+    }
+
+    .nutrition-demo__stats-text {
+      font: inherit;
+    }
+  }
+}
+
+.nutrition-demo__title {
+  @include noBox;
+  @include font(36px, 40px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nutrition-demo__text {
+  @include noBox;
+  @include font(14px, 18px, $font_base-card);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nutrition-demo__stats-title {
+  @include noBox;
+  @include font(24px, 24px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nutrition-demo__stats-text {
+  @include noBox;
+  @include font(12px, 12px, $font_base-card);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}

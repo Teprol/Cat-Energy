@@ -1,0 +1,15 @@
+.advantages__title {
+  @include noBox;
+  @include font(36px, 40px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.advantages__text {
+  @include noBox;
+  @include font(14px, 18px, $font_base-card);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}

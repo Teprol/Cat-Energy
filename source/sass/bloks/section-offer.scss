@@ -2,3 +2,22 @@
   background: url(../img/background/green_cat.jpg);
   background-color: $background_good;
 }
+
+.section-offer__text-title {
+  @include font(36px, 36px, $font_ofer-color);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  @include noBox;
+}
+
+.section-offer__slogan {
+  @include font(14px, 14px, $font_ofer-color);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  @include noBox;
+}

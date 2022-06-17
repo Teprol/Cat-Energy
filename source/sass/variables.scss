@@ -1,13 +1,30 @@
 //*цвета
 $background_base: #fff;
-$background_good: #68B738;
-$background_card: #D9D9D9;
-$background_demo: #EAEAEA;
-$background_footer: #F2F2F2;
+$background_good: #68b738;
+$background_good2: #5EAA2F;
+$background_card: #d9d9d9;
+$background_demo: #eaeaea;
+$background_footer: #f2f2f2;
+
+//* цвета шрифтов
+$font_base: #000;
+$font_ofer-color: #fff;
+$font_base-card: #444;
+$font_cooperation: #111;
+
+//*прозрачность
+$opacity_hover: 0.6;
+$opacity_press: 0.3;
 
 //*примиси
 @mixin noBox {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+@mixin font($size: 14px, $height: 18px, $color: black) {
+  font-size: $size;
+  line-height: $height;
+  color: $color;
 }

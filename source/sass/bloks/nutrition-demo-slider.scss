@@ -1,0 +1,8 @@
+.nutrition-demo-slider__controls-text {
+  @include noBox;
+  @include font(16px, 20px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}

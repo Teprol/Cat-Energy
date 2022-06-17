@@ -1,0 +1,11 @@
+.footer-bottom {
+  @include noBox;
+}
+
+.footer-coperayt__text {
+  @include noBox;
+  @include font(16px, 18px, $font_cooperation);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}
