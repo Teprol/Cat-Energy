@@ -1,6 +1,25 @@
 .nutrition-demo {
   @include noBox;
   background-color: $background_demo;
+  padding: 27px 0 39px;
+}
+
+.nutrition-demo__title {
+  @include noBox;
+  margin-bottom: 33px;
+  @include font(36px, 40px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nutrition-demo__text {
+  @include noBox;
+  margin-bottom: 25px;
+  @include font(14px, 18px, $font_base-card);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .nutrition-demo__stats-item {
@@ -22,22 +41,6 @@
       font: inherit;
     }
   }
-}
-
-.nutrition-demo__title {
-  @include noBox;
-  @include font(36px, 40px, $font_base);
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-}
-
-.nutrition-demo__text {
-  @include noBox;
-  @include font(14px, 18px, $font_base-card);
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
 }
 
 .nutrition-demo__stats-title {

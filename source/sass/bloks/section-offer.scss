@@ -1,6 +1,8 @@
 .section-offer__header {
   background: url(../img/background/green_cat.jpg);
   background-color: $background_good;
+  @include noBox;
+  padding: 27px 0 164px;
 }
 
 .section-offer__text-title {
@@ -10,6 +12,7 @@
   font-weight: 400;
   text-align: center;
   @include noBox;
+  margin-bottom: 25px;
 }
 
 .section-offer__slogan {
@@ -20,4 +23,13 @@
   text-align: center;
   text-transform: uppercase;
   @include noBox;
+}
+
+.section-offer__container-image {
+  margin-top: -131px;
+  margin-bottom: 22px;
+}
+
+.section-offer__image {
+  margin-bottom: 3px;
 }

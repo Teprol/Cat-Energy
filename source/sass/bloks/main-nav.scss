@@ -3,6 +3,7 @@
 }
 
 .main-nav__link {
+  position: relative;
   display: inline-block;
   font-family: "Oswald", Arial;
   font-style: normal;
@@ -19,7 +20,20 @@
     opacity: $opacity_press;
   }
 
-  &_active {
-    border-bottom: 2px solid $background_good;
+  &_active::after {
+    content: "";
+    bottom: -8px;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $background_good;
   }
+}
+
+.main-nav__item {
+  @include noBox;
+  padding: 22px 0;
+  text-align: center;
+  border-bottom: 1px solid $color-border;
 }

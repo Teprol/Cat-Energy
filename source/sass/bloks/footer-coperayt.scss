@@ -1,9 +1,25 @@
 .footer-coperayt {
   @include noBox;
+  padding: 22px 0 0;
 }
 
 .footer-coperayt__link {
   &_press:active {
     opacity: $opacity_press;
+
+    .footer-coperayt__icon {
+      path {
+        fill: $background_good;
+      }
+    }
   }
+
+  &_hover:hover {
+    .footer-coperayt__icon {
+      path {
+        fill: $background_good;
+      }
+    }
+  }
+
 }

@@ -1,3 +1,11 @@
+.nutrition-demo-slider__slide-item{
+  display: none;
+
+  &_action {
+    display: block;
+  }
+}
+
 .nutrition-demo-slider__controls-text {
   @include noBox;
   @include font(16px, 20px, $font_base);

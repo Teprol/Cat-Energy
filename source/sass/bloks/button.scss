@@ -1,6 +1,9 @@
 .button {
   @include noBox;
   background-color: $background_good;
+  display: block;
+  text-align: center;
+  padding: 10.3px 0;
 
   &_hover:hover {
     background-color: $background_good2;

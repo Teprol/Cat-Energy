@@ -1,6 +1,7 @@
 .cooperation {
   @include noBox;
   background-color: $background_base;
+  padding: 28px 0 26px;
 }
 
 .cooperation__text {

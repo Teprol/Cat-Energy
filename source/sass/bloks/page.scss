@@ -1,0 +1,5 @@
+.page__body {
+  @include noBox;
+  min-width: 320px;
+  height: 100%;
+}

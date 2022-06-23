@@ -23,3 +23,18 @@
   text-decoration: none;
   color: inherit;
 }
+
+.wrapper {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.picture {
+  @include noBox;
+  display: block;
+  max-width: 100%;
+
+  img {
+    display: block;
+  }
+}

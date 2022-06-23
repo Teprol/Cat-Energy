@@ -1,5 +1,10 @@
+.advantages {
+  padding-bottom: 46px;
+}
+
 .advantages__title {
   @include noBox;
+  margin-bottom: 38px;
   @include font(36px, 40px, $font_base);
   font-family: "Oswald";
   font-style: normal;
@@ -12,4 +17,14 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+}
+
+.advantages__item {
+  @include noBox;
+  margin-bottom: 26px;
+  padding-left: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -1,0 +1,5 @@
+.page-header__top {
+  @include noBox;
+  padding: 12px 0 22px;
+  border-bottom: 1px solid $color-border;
+}

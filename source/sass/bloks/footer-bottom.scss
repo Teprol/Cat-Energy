@@ -1,5 +1,6 @@
 .footer-bottom {
   @include noBox;
+  padding: 39px 0 22px;
 }
 
 .footer-coperayt__text {
@@ -8,4 +9,15 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+}
+
+.footer-bottom__logo {
+  padding-bottom: 32px;
+  border-bottom: 1px solid $color-border-card;
+  text-align: center;
+}
+
+.footer-bottom__social {
+  padding: 20px 0 21px;
+  border-bottom: 1px solid $color-border-card;
 }
