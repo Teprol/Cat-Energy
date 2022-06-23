@@ -16,33 +16,37 @@
 <body class="page__body">
   <header class="page-header">
     <!-- !шапка -->
-    <div class="page-header__wrapper wrapper">
-      <a class="page-header__logo logo" href="index.html" aria-label="Ссылка на главную страницу">
-        <picture>
-          <source srcset="img/content/desctop/logo-desktop.png" media="(min-width: 1439px)" width="202" height="59">
-          <source srcset="img/content/tablet/logo-tablet.png" media="(min-width: 766px)" width="174" height="52">
-          <img src="img/content/mobile/Group 8.png" alt="Логотип Cat Energy" width="197" height="38">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <!-- !навигация в шапке -->
-        <button class="main-nav__button-toggle main-nav__button-toggle_mobile" type="button"
-          aria-label="Кнопка открытия Навигации"></button>
-        <!-- кнопка которая видна на мобилке, но по дефолту скрыта -->
-        <ul class="main-nav__list main-nav__list_tablet main-nav__list_desktop list">
-          <li
-            class="main-nav__item main-nav__item_active main-nav__item_active-desktop main-nav__item_hover main-nav__item_press">
-            главная
-          </li>
-          <li class="main-nav__item main-nav__item_hover main-nav__item_press">
-            каталог продукции
-          </li>
-          <li class="main-nav__item main-nav__item_hover main-nav__item_press">
-            подбор программы
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__top">
+      <div class="page-header__container wrapper">
+        <a class="page-header__logo logo logo_hover logo_press" href="#" aria-label="Ссылка на главную страницу">
+          <picture class="picture">
+            <source srcset="img/content/desctop/logo-desktop.png" media="(min-width: 1439px)" width="202" height="59">
+            <source srcset="img/content/tablet/logo-tablet.png" media="(min-width: 766px)" width="174" height="52">
+            <img src="img/content/mobile/Group 8.png" alt="Логотип Cat Energy" width="197" height="38">
+          </picture>
+        </a>
+        <button class="page-header__button-nav" type="button" aria-label="Кнопка открытия Навигации">Меню</button>
+      </div>
     </div>
+    <nav class="main-nav">
+      <!-- !навигация в шапке -->
+      <!-- кнопка которая видна на мобилке, но по дефолту скрыта -->
+      <ul class="main-nav__list main-nav__list_tablet main-nav__list_desktop list">
+        <li
+          class="main-nav__item main-nav__item_active main-nav__item_active-desktop main-nav__item_hover main-nav__item_press">
+          <a class="main-nav__link main-nav__link_hover main-nav__link_press main-nav__link_active link"
+            href="#">главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item_hover main-nav__item_press">
+          <a class="main-nav__link main-nav__link_hover main-nav__link_press link" href="Catalog.html">каталог
+            продукции</a>
+        </li>
+        <li class="main-nav__item main-nav__item_hover main-nav__item_press">
+          <a class="main-nav__link main-nav__link_hover main-nav__link_press link" href="form.html">подбор
+            программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-content">
     <h1 class="visibalitihidden">Подбор программы питания</h1>
@@ -141,11 +145,13 @@
   <footer class="page-footer">
     <!-- !подвал -->
     <section class="cooperation page-footer__cooperation page-footer__cooperation_position-desctop">
-      <h2 class="visibalitihidden">Сотрудничество</h2>
-      <p class="cooperation__text">приглашаем к сотрудничеству дилеров!</p>
-      <div class="cooperation__addres">
-        <p class="cooperation__addres-top">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="cooperation__addres__bottom">Санкт-Петербург</p>
+      <div class="wrapper">
+        <h2 class="visibalitihidden">Сотрудничество</h2>
+        <p class="cooperation__text">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+        <div class="cooperation__addres">
+          <p class="cooperation__addres-top">ул. Большая<br> Конюшенная, д. 19/8</p>
+          <p class="cooperation__addres__bottom">Санкт-Петербург</p>
+        </div>
       </div>
     </section>
     <section class="page-map">
@@ -154,43 +160,50 @@
         Наш адрес ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
       <div class="page-map__map">
-        <!-- нужен чтобы от него спозиционировать элемент значка мест положения на карте -->
-        <iframe src="#"></iframe>
-        <!-- вставим интерактивную карту с яндекса -->
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac5e801ef77a7132c96271e3c2db2d7946f220290513c5061b066ed2f276fc569&amp;source=constructor"
+          width="100%" height="362" frameborder="0"></iframe>
       </div>
     </section>
     <div class="footer-bottom page-footer__footer-bottom">
-      <div class="footer-bottom__logo">
-        <a class="footer-bottom__link logo-footer" href="#">
-          <img src="#" alt="Логотип Cat Energy текстом в подвале сайта" width="101" height="18" />
-        </a>
-      </div>
-      <div class="footer-bottom__social social">
-        <address>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="link" href="#" aria-label="Ссылка на Вконтакте">
-                svg
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="link" href="#" aria-label="Ссылка на Инстаграм">
-                svg
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="link" href="#" aria-label="Ссылка на Фэйсбук">
-                svg
-              </a>
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="footer-bottom__coperayt footer-coperayt">
-        <a class="link" href="#" aria-label="Ссылка на представителя">
-          <p class="footer-coperayt__text">HTML Academy</p>
-          <img src="#" alt="логотип представителя">
-        </a>
+      <div class="wrapper">
+        <div class="footer-bottom__logo">
+          <a class="footer-bottom__link logo-footer logo-footer_hover logo-footer_press" href="#">
+            <img src="img/content/footer-logo 2.png" alt="Логотип Cat Energy текстом в подвале сайта" width="128"
+              height="24" />
+          </a>
+        </div>
+        <div class="footer-bottom__social">
+          <address>
+            <ul class="social__list list">
+              <li class="social__item">
+                <a class="link" href="#" aria-label="Ссылка на Вконтакте">
+                  Вконтакте
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="link" href="#" aria-label="Ссылка на Инстаграм">
+                  Инстаграм
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="link" href="#" aria-label="Ссылка на Фэйсбук">
+                  Фэйсбук
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom__coperayt footer-coperayt">
+          <a class="footer-coperayt__link footer-coperayt__link_hover footer-coperayt__link_press link" href="#"
+            aria-label="Ссылка на представителя">
+            <p class="footer-coperayt__text">HTML Academy</p>
+            <svg class="footer-coperayt__icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="27" height="34">
+              <path fill="#666"
+                d="M 13.64 0.02 L 13.5 0 L 0 1.4 v 24.61 L 13.5 34 L 27 26.01 V 1.41 L 13.64 0 Z m 11.6 25 L 13.5 31.96 L 1.77 25.02 v -10.1 l 11.68 6.93 l 0.02 1.25 l -8.02 -4.75 v 1.23 l 8.04 4.8 l 0.02 1.3 l -8.05 -4.76 v 1.22 l 8.04 4.81 l 8.12 -4.83 V 16.9 l 3.62 -2.15 v 10.26 Z m 0 -11.57 L 22 15.33 l -1.48 0.88 l -7.06 -4.19 l -0.01 1.23 l 6.04 3.57 l -0.06 0.03 l -0.13 0.07 l -0.86 0.5 l -4.98 -2.95 l -0.01 1.22 l 3.93 2.33 l -0.93 0.61 l -0.02 0.01 l -2.97 -1.74 l -0.01 1.23 l 1.94 1.13 l -1.98 1.19 L 1.8 13.58 l 11.63 -6.96 l 11.8 6.83 Z m 0 -1.22 L 13.43 5.3 L 1.77 12.22 V 2.99 L 13.5 1.76 L 25.23 3 v 9.24 Z" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
