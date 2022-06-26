@@ -1,0 +1,16 @@
+.fieldset-select-program-nutrition {
+  padding: 28px 0 25px 45px;
+  border: 1px solid $color-border-card;
+  border-left: none;
+  border-right: none;
+  @include font(16px, 18px, $font-special-dark-form);
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.fieldset-select-program-nutrition__item {
+
+}

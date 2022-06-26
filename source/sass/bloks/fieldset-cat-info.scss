@@ -1,0 +1,32 @@
+.fieldset-cat-info {
+  @include font(16px, 18px, $font_base-card);
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.fieldset-cat-info__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.fieldset-cat-info__label {
+  margin-right: 14px;
+}
+
+.fieldset-cat-info__input-text {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding: 12px 15px 13px;
+  border: 1px solid $color-border-form;
+  width: 100%;
+}
+
+.fieldset-select-program-nutrition__item {
+  margin-bottom: 24.5px;
+}

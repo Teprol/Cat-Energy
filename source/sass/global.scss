@@ -24,11 +24,6 @@
   color: inherit;
 }
 
-.wrapper {
-  width: calc(100% - 40px);
-  margin: 0 auto;
-}
-
 .picture {
   @include noBox;
   display: block;
@@ -37,4 +32,14 @@
   img {
     display: block;
   }
+}
+
+.fieldset {
+  @include noBox;
+  border: none;
+}
+
+.wrapper {
+  width: calc(100% - 40px);
+  margin: 0 auto;
 }

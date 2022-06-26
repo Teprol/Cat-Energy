@@ -1,0 +1,31 @@
+.form-nutrition-program__cat-info {
+  margin-bottom: 24px;
+}
+
+.form-nutrition-program__select-program-nutrition {
+  margin-bottom: 24px;
+}
+
+.form-nutrition-program__fio-owner-cat {
+  margin-bottom: 24px;
+}
+
+.form-nutrition-program__coment {
+  margin-bottom: 24px;
+}
+
+.form-nutrition-program__add-info {
+  margin-bottom: 34px;
+}
+
+.form-nutrition-program__submit {
+  width: 100%;
+}
+
+.form-nutrition-program__info {
+  text-align: center;
+  @include font(14px, 16px, $font_base);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}

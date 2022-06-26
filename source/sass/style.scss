@@ -9,6 +9,7 @@
 @import "bloks/logo.scss";
 @import "bloks/main-nav.scss";
 @import "bloks/page-content.scss";
+@import "bloks/page-title";
 @import "bloks/section-offer.scss";
 @import "bloks/button.scss";
 @import "bloks/section-programm-food.scss";
@@ -18,5 +19,15 @@
 @import "bloks/page-footer.scss";
 @import "bloks/cooperation.scss";
 @import "bloks/footer-bottom.scss";
+@import "bloks/social.scss";
 @import "bloks/logo-footer.scss";
 @import "bloks/footer-coperayt.scss";
+@import "bloks/content-header.scss";
+//*form.html
+@import "bloks/input.scss";
+@import "bloks/form-nutrition-program.scss";
+@import "bloks/fieldset-cat-info.scss";
+@import "bloks/fieldset-select-program-nutrition.scss";
+@import "bloks/fieldset-fio-owner-cat.scss";
+@import "bloks/fieldset-coment.scss";
+@import "bloks/fieldset-add-info.scss";

@@ -1,0 +1,8 @@
+.page-title {
+  @include font(36px, 36px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  @include noBox;
+}

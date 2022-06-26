@@ -6,13 +6,8 @@
 }
 
 .section-offer__text-title {
-  @include font(36px, 36px, $font_ofer-color);
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  @include noBox;
   margin-bottom: 25px;
+  color: $font_ofer-color;
 }
 
 .section-offer__slogan {
@@ -27,7 +22,6 @@
 
 .section-offer__container-image {
   margin-top: -131px;
-  margin-bottom: 22px;
 }
 
 .section-offer__image {

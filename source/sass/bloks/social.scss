@@ -1,0 +1,23 @@
+.social {
+  padding: 20px 0 21px;
+  border-bottom: 1px solid $color-border-card;
+}
+
+.social__link {
+
+  &_hover:hover {
+    path {
+      fill: $background_good;
+    }
+  }
+
+  &_action:active {
+    svg {
+      opacity: $opacity_press;
+    }
+
+    path {
+      fill: $background_good;
+    }
+  }
+}

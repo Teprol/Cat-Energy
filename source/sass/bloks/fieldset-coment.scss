@@ -1,0 +1,19 @@
+.fieldset-coment__title {
+  @include font(24px, 26px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 37px;
+}
+
+.fieldset-coment__coment {
+  box-sizing: border-box;
+  @include font(16px, 18px, $font_base-card);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 9px 13.5px;
+  width: 100%;
+  min-height: 150px;
+}
