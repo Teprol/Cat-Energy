@@ -1,0 +1,14 @@
+.gift-offer {
+  @include noBox;
+  padding: 186px 61px 43px 58px;
+  background-color: $background_good;
+}
+
+.gift-offer__text {
+  @include noBox;
+  text-align: center;
+  @include font(16px, 20px, $background_base);
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,3 +1,5 @@
+.page-content {}
+
 .page-content__section-programm-food {
   margin-bottom: 27px;
 }
@@ -7,5 +9,15 @@
 }
 
 .page-content__content-header {
-  margin-bottom: 39px;
+  padding-bottom: 41px;
+  border-bottom: 1px solid $color-border-catalog;
+  margin-bottom: 19px;
+}
+
+.page-content__rage {
+  margin-bottom: 25px;
+}
+
+.page-content__form-nutrition-program {
+  margin-bottom: 32px;
 }

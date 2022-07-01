@@ -1,0 +1,47 @@
+.card-product-add {
+  box-sizing: border-box;
+  padding-top: 53px;
+  padding-bottom: 25px;
+}
+
+.card-product-add__title {
+  @include noBox;
+  margin-bottom: 8px;
+  @include font(16px, 20px, $font_cooperation);
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-product-add__text {
+  @include noBox;
+  margin-bottom: 21px;
+  @include font(12px, 16px, $font_base-card);
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-product-add__button {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $background_footer;
+
+  span {
+    @include font(16px, 20px, $font_base-card);
+  }
+
+  &_hover:hover {
+    background-color: $color-border-catalog;
+  }
+
+  &_pressed:active {
+    background-color: $color-border-catalog;
+    span {
+      opacity: $opacity_press;
+    }
+  }
+}

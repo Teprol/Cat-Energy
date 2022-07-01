@@ -3,3 +3,9 @@
   min-width: 320px;
   height: 100%;
 }
+
+.page__page-content {
+  &_catalog {
+    margin-bottom: 35px;
+  }
+}

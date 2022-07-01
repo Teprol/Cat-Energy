@@ -1,0 +1,33 @@
+.card-product {
+  box-sizing: border-box;
+  // padding-top: 19px;
+  padding-bottom: 25px;
+}
+
+.card-product__link {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  @include font(16px, 20px, $font-special-dark-form);
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.card-product__title {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  color: inherit;
+}
+
+.card-product__button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card-product__container {
+  margin-bottom: 13px;
+}

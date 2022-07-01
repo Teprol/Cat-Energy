@@ -1,0 +1,24 @@
+.additional-goods {}
+
+.additional-goods__title {
+  @include noBox;
+  margin-bottom: 13px;
+  @include font(24px, 24px, $font_base);
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 36px;
+  border-bottom: 1px solid $color-border-form2;
+}
+
+.additional-goods__item {
+  margin-bottom: 19px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.additional-goods__list {
+  margin-bottom: 39px;
+}

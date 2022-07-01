@@ -1,0 +1,31 @@
+.card-additional-goods {
+  @include noBox;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $color-border-form2;
+}
+
+.card-additional-goods__title {
+  @include noBox;
+  margin-bottom: 13px;
+  @include font(16px, 14px, $font-special-dark-form);
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card-additional-goods__stat {
+  @include noBox;
+  margin-bottom: 15px;
+  display: flex;
+  @include font(14px, 14px, $font_base-card);
+
+  dd, dt {
+    @include noBox;
+    font: inherit;
+  }
+}
+
+.card-additional-goods__button {
+  width: 100%;
+}

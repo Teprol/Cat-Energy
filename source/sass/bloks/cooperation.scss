@@ -2,6 +2,10 @@
   @include noBox;
   background-color: $background_base;
   padding: 28px 0 26px;
+
+  &_dark {
+    background-color: $background_footer;
+  }
 }
 
 .cooperation__text {
