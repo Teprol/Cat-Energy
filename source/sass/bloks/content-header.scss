@@ -9,8 +9,8 @@
 
 .content-header__slogan {
   @include noBox;
-  @include font (14px, 18px, $font_base);
-  font-family: 'Oswald';
+  @include font(14px, 18px, $font_base);
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;

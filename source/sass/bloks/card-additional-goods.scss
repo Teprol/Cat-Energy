@@ -8,7 +8,7 @@
   @include noBox;
   margin-bottom: 13px;
   @include font(16px, 14px, $font-special-dark-form);
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -20,7 +20,8 @@
   display: flex;
   @include font(14px, 14px, $font_base-card);
 
-  dd, dt {
+  dd,
+  dt {
     @include noBox;
     font: inherit;
   }
