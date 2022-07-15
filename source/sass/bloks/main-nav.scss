@@ -28,12 +28,37 @@
     height: 2px;
     width: 100%;
     background-color: $background_good;
+
+    @media screen and (min-width: $width-desktop) {
+      background-color: $background_base;
+    }
+  }
+
+  @media screen and (min-width: $width-table) {
+    @include font(18px, 24px, $font_base);
+    font-weight: 400;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    @include font(20px, 30px, $font_ofer-color);
+  }
+}
+
+.main-nav__list {
+  @media screen and (min-width: $width-table) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .main-nav__item {
-  @include noBox;
+  margin: 0 -20px;
   padding: 22px 0;
+  border-top: 1px solid $color-border;
   text-align: center;
-  border-bottom: 1px solid $color-border;
+
+  @media screen and (min-width: $width-table) {
+    margin: 0;
+    border-top: none;
+  }
 }

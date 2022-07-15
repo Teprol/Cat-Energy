@@ -1,3 +1,8 @@
+//*разрешения
+$width-mobily: 320px;
+$width-table: 768px;
+$width-desktop: 1440px;
+
 //*цвета
 $background_base: #fff;
 $background_good: #68b738;
@@ -27,10 +32,10 @@ $opacity_press: 0.3;
 
 //*примиси
 @mixin noBox {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 
 @mixin font($size: 14px, $height: 18px, $color: black) {
   font-size: $size;

@@ -1,5 +1,54 @@
+.page-header {}
+
 .page-header__top {
   @include noBox;
-  padding: 12px 0 22px;
-  border-bottom: 1px solid $color-border;
+  padding: 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+// .page-header__container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+.page-header__button-nav {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  background-image: url("../../img/background/Logo_mobile.svg");
+  border: none;
+
+  @media (min-width: $width-table) {
+    display: none;
+  }
+}
+
+.page-header__container {
+  @media screen and (min-width: $width-table) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 12px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 53px;
+  }
+}
+
+.page-header__main-nav {
+
+  @media (min-width: $width-table) {
+    flex-basis: 440px;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-basis: 478px;
+    background-color: #64a73d29;
+  }
 }

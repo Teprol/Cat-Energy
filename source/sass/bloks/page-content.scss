@@ -1,5 +1,4 @@
-.page-content {
-}
+.page-content {}
 
 .page-content__section-programm-food {
   margin-bottom: 27px;
@@ -7,6 +6,18 @@
 
 .page-content__section-offer {
   margin-bottom: 22px;
+
+  @media screen and (min-width: $width-table) {
+    padding: 0 237px 526px 117px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 223px 836px 267px 190px;
+    background: url(../img/background/green_cat-desctop.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
+  }
 }
 
 .page-content__content-header {

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visibalitihidden {
   position: absolute;
   width: 1px;
@@ -31,6 +37,7 @@
 
   img {
     display: block;
+    max-width: 100%;
   }
 }
 
@@ -40,6 +47,15 @@
 }
 
 .wrapper {
-  width: calc(100% - 40px);
+  min-width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  @media screen and (min-width: $width-table) {
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 0 110px;
+  }
 }

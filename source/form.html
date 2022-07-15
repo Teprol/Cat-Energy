@@ -13,78 +13,44 @@
   </head>
 
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page__page-header">
       <!-- !шапка -->
-      <div class="page-header__top">
-        <div class="page-header__container wrapper">
-          <a
-            class="page-header__logo logo logo_hover logo_press"
-            href="index.html"
-            aria-label="Ссылка на главную страницу"
-          >
+      <div class="wrapper page-header__container">
+        <div class="page-header__top">
+          <!-- <div class="page-header__container wrapper"> -->
+          <a class="page-header__logo logo logo_hover logo_press" href="index.html" aria-label="Ссылка на главную страницу">
             <picture class="picture">
-              <source
-                srcset="img/content/desctop/logo-desktop.png"
-                media="(min-width: 1439px)"
-                width="202"
-                height="59"
-              />
-              <source
-                srcset="img/content/tablet/logo-tablet.png"
-                media="(min-width: 766px)"
-                width="174"
-                height="52"
-              />
-              <img
-                src="img/content/mobile/Group 8.png"
-                alt="Логотип Cat Energy"
-                width="197"
-                height="38"
-              />
+              <source srcset="img/content/desctop/logo-desktop.png" media="(min-width: 1439px)" width="202" height="59" />
+              <source srcset="img/content/tablet/logo-tablet.png" media="(min-width: 766px)" width="174" height="52" />
+              <img src="img/content/mobile/Group 8.png" alt="Логотип Cat Energy" width="197" height="38" />
             </picture>
           </a>
-          <button
-            class="page-header__button-nav"
-            type="button"
-            aria-label="Кнопка открытия Навигации"
-          >
-            Меню
+          <button class="page-header__button-nav" type="button" aria-label="Кнопка открытия Навигации">
           </button>
+          <!-- </div> -->
         </div>
+        <nav class="main-nav page-header__main-nav">
+          <!-- !навигация в шапке -->
+          <!-- кнопка которая видна на мобилке, но по дефолту скрыта -->
+          <ul class="main-nav__list list">
+            <li
+              class="main-nav__item main-nav__item_active main-nav__item_active-desktop main-nav__item_hover main-nav__item_press">
+              <a class="main-nav__link main-nav__link_hover main-nav__link_press main-nav__link_active link"
+                href="index.html">главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item_hover main-nav__item_press">
+              <a class="main-nav__link main-nav__link_hover main-nav__link_press link" href="Catalog.html">каталог
+                продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item_hover main-nav__item_press">
+              <a class="main-nav__link main-nav__link_hover main-nav__link_press link" href="form.html">подбор
+                программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <!-- !навигация в шапке -->
-        <!-- кнопка которая видна на мобилке, но по дефолту скрыта -->
-        <ul
-          class="main-nav__list main-nav__list_tablet main-nav__list_desktop list"
-        >
-          <li
-            class="main-nav__item main-nav__item_active main-nav__item_active-desktop main-nav__item_hover main-nav__item_press"
-          >
-            <a
-              class="main-nav__link main-nav__link_hover main-nav__link_press main-nav__link_active link"
-              href="index.html"
-              >главная</a
-            >
-          </li>
-          <li class="main-nav__item main-nav__item_hover main-nav__item_press">
-            <a
-              class="main-nav__link main-nav__link_hover main-nav__link_press link"
-              href="Catalog.html"
-              >каталог продукции</a
-            >
-          </li>
-          <li class="main-nav__item main-nav__item_hover main-nav__item_press">
-            <a
-              class="main-nav__link main-nav__link_hover main-nav__link_press link"
-              href="form.html"
-              >подбор программы</a
-            >
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main class="page-content">
+    <main class="page-content page__page-content ">
       <h1 class="visibalitihidden">Подбор программы питания</h1>
       <header class="content-header page-content__content-header wrapper">
         <p class="content-header__title page-title">Подбор программы</p>
