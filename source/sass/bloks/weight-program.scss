@@ -1,0 +1,60 @@
+.weight-program__visible-title {
+  @include noBox;
+  margin-bottom: 29px;
+  padding-left: 71px;
+  @include font(24px, 37px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $width-table) {
+    padding: 0;
+    margin-bottom: 24px;
+    @include font(36px, 36px, $font_base);
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.weight-program__text {
+  @include noBox;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $color-border-card;
+  margin-bottom: 19px;
+  @include font(14px, 18px, $font_base-card);
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+
+  @media screen and (min-width: $width-table) {
+    @include font(16px, 24px, $font_base);
+    border: none;
+    padding: 0;
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    margin-bottom: 23px;
+  }
+}
+
+.weight-program__link {
+  @include noBox;
+  @include font(16px, 16px, $font_base);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &_pressed:active {
+    opacity: $opacity_press;
+  }
+
+  @media screen and (min-width: $width-table) {
+    @include font(20px, 30px, $font_base);
+  }
+}

@@ -1,7 +1,25 @@
+.nutrition-demo-slider {
+  @media screen and (min-width: $width-table) {
+    background-color: $background_demo;
+  }
+}
+
+.nutrition-demo-slider__slide-list {
+  display: flex;
+  justify-content: center;
+  margin-left: -20px;
+  margin-right: -13px;
+}
+
 .nutrition-demo-slider__slide-item {
+  overflow: hidden;
   display: none;
 
-  &_action {
+  &_active {
+    display: block;
+  }
+
+  @media screen and (min-width: $width-table) {
     display: block;
   }
 }

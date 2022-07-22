@@ -1,7 +1,15 @@
 .page-content {}
 
 .page-content__section-programm-food {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
+
+  @media screen and (min-width: $width-table) {
+    margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    margin-bottom: 71px;
+  }
 }
 
 .page-content__section-offer {
@@ -16,6 +24,7 @@
     padding: 223px 836px 267px 190px;
     background: url(../img/background/green_cat-desctop.jpg);
     background-repeat: no-repeat;
+    background-size: 50% 89.4%; //ну это я пробую ставить проценты вместо пикселей
     background-position: 100% 0px;
   }
 }
@@ -30,6 +39,16 @@
   margin-bottom: 25px;
 }
 
+.page-content__advantages {
+  @media screen and (min-width: $width-desktop) {
+    margin-bottom: 82px;
+  }
+}
+
 .page-content__form-nutrition-program {
   margin-bottom: 32px;
+}
+
+.page-content__nutrition-demo {
+  display: grid;
 }

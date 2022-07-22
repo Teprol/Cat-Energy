@@ -10,6 +10,7 @@
 
 .page__page-header {
   grid-row: 1/2;
+  margin-bottom: 1px;
 
   @media screen and (min-width: $width-table) {
     margin-bottom: 64px;

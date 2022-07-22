@@ -1,29 +1,70 @@
 .nutrition-demo {
-  @include noBox;
   background-color: $background_demo;
-  padding: 27px 0 39px;
+  padding-top: 27px;
+  padding-bottom: 39px;
+
+  @media screen and (min-width: $width-table) {
+    background-color: transparent;
+    padding-top: 43px;
+    padding-bottom: 39px;
+    border-top: 1px solid $color-border;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    border-top: none;
+  }
+}
+
+.nutrition-demo__content {
+  margin-bottom: 33px;
+
+  @media screen and (min-width: $width-table) {
+    margin-bottom: 250px;
+  }
 }
 
 .nutrition-demo__title {
   @include noBox;
-  margin-bottom: 33px;
-  @include font(36px, 40px, $font_base);
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
+  margin-bottom: 36px;
+
+  @media screen and (min-width: $width-table) {
+    margin-bottom: 63px;
+  }
 }
 
 .nutrition-demo__text {
   @include noBox;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   @include font(14px, 18px, $font_base-card);
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+
+  @media screen and (min-width: $width-table) {
+    @include font(16px, 24px, $font_base);
+    margin-bottom: 54px;
+  }
+}
+
+.nutrition-demo__stats-list {
+  gap: 39px 31px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: $width-table) {
+    column-gap: 42px;
+  }
 }
 
 .nutrition-demo__stats-item {
   @include noBox;
+  flex-basis: 124px;
+
+  @media screen and (min-width: $width-table) {
+    flex-basis: 162px;
+  }
 
   &_line {
     @include noBox;
@@ -32,6 +73,16 @@
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    @media screen and (min-width: $width-table) {
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: flex-end;
+      @include font(20px, 20px, $font_base);
+    }
 
     .nutrition-demo__stats-title {
       font: inherit;
@@ -39,7 +90,10 @@
 
     .nutrition-demo__stats-text {
       font: inherit;
+      color: $font_base;
     }
+
+
   }
 }
 
@@ -49,6 +103,10 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
+
+  @media screen and (min-width: $width-table) {
+    @include font(30px, 37px, $font_base);
+  }
 }
 
 .nutrition-demo__stats-text {
@@ -57,4 +115,13 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+
+  @media screen and (min-width: $width-table) {
+    @include font(14px, 14px, $font_base-card);
+  }
+}
+
+.nutrition-demo-slider__controls {
+  display: flex;
+  justify-content: space-evenly;
 }

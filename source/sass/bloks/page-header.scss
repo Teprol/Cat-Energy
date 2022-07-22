@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 // .page-header__container {
@@ -16,10 +16,11 @@
 // }
 
 .page-header__button-nav {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
   background-image: url("../../img/background/Logo_mobile.svg");
+  background-repeat: no-repeat;
   border: none;
 
   @media (min-width: $width-table) {
