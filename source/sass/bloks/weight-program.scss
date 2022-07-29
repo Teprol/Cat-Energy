@@ -1,3 +1,26 @@
+.weight-program {
+  @include noBox;
+  padding: 30px 20px 19px;
+  background-color: $background_footer;
+
+  @media screen and (min-width: $width-table) {
+    padding: 77px 279px 53px 53px;
+    flex-basis: 372px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 77px 51px 58px 52px;
+    flex-basis: 570px;
+    flex: 1;
+  }
+
+  &_padding-right {
+    @media screen and (min-width: $width-table) and (max-width: $width-desktop - 1px) {
+      padding-right: 311px;
+    }
+  }
+}
+
 .weight-program__visible-title {
   @include noBox;
   margin-bottom: 29px;
@@ -34,11 +57,11 @@
     @include font(16px, 24px, $font_base);
     border: none;
     padding: 0;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 
   @media screen and (min-width: $width-desktop) {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 }
 

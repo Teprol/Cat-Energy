@@ -7,11 +7,13 @@
   @media screen and (min-width: $width-table) {
     background: none;
     padding: 0;
+    padding-left: 6px;
     margin-bottom: 49px;
   }
 
   @media screen and (min-width: $width-desktop) {
     margin-bottom: 52px;
+    padding-left: 0;
   }
 }
 
@@ -64,8 +66,8 @@
 
   @media screen and (min-width: $width-table) {
     position: absolute;
-    left: -50px;
-    top: -31px;
+    left: -83px;
+    top: -29px;
     display: block;
     min-width: 709px;
     z-index: -1;

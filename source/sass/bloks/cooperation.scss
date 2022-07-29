@@ -1,7 +1,7 @@
 .cooperation {
-  @include noBox;
   background-color: $background_base;
-  padding: 28px 0 26px;
+  // padding: 28px 0 26px;
+  padding-bottom: 26px;
 
   &_dark {
     background-color: $background_footer;
@@ -15,6 +15,7 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+  flex-grow: 1;
 }
 
 .cooperation__addres {
@@ -23,6 +24,7 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+  flex-grow: 1;
 }
 
 .cooperation__addres-top {

@@ -8,7 +8,7 @@
   }
 
   @media screen and (min-width: $width-desktop) {
-    margin-bottom: 71px;
+    margin-bottom: 74px;
   }
 }
 
@@ -16,12 +16,12 @@
   margin-bottom: 22px;
 
   @media screen and (min-width: $width-table) {
-    padding: 0 237px 526px 117px;
+    padding: 0 223px 526px 111px;
     margin-bottom: 0;
   }
 
   @media screen and (min-width: $width-desktop) {
-    padding: 223px 836px 267px 190px;
+    padding: 223px 830px 265px 190px;
     background: url(../img/background/green_cat-desctop.jpg);
     background-repeat: no-repeat;
     background-size: 50% 89.4%; //ну это я пробую ставить проценты вместо пикселей
@@ -51,4 +51,10 @@
 
 .page-content__nutrition-demo {
   display: grid;
+
+  @media screen and (min-width: $width-desktop) {
+    column-gap: 80px;
+    grid-template-columns: repeat(auto-fit, 245px);
+    grid-template-rows: repeat(2, auto);
+  }
 }

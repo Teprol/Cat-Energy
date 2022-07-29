@@ -38,6 +38,10 @@
   img {
     display: block;
     max-width: 100%;
+
+    @media screen and (min-width: $width-table) {
+      max-width: initial;
+    }
   }
 }
 

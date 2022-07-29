@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 53px;
+    padding-top: 40px;
   }
 }
 
@@ -46,6 +46,7 @@
 
   @media (min-width: $width-table) {
     flex-basis: 440px;
+    margin-top: -6px;
   }
 
   @media (min-width: $width-desktop) {

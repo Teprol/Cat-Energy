@@ -1,6 +1,7 @@
 .footer-bottom {
-  @include noBox;
-  padding: 0 0 22px;
+  // @include noBox;
+  margin: 0;
+ padding-bottom: 22px;
 }
 
 .footer-coperayt__text {
@@ -13,7 +14,7 @@
 
 .footer-bottom__logo {
   margin-bottom: 20px;
-  padding-bottom: 32px;
+  padding-bottom: 26px;
   border-bottom: 1px solid $color-border-card;
   text-align: center;
 }

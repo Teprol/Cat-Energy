@@ -4,6 +4,10 @@
 }
 
 .footer-coperayt__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   &_press:active {
     opacity: $opacity_press;
 

@@ -29,6 +29,10 @@
     width: 100%;
     background-color: $background_good;
 
+    @media screen and (min-width: $width-table) {
+      bottom: -10px;
+    }
+
     @media screen and (min-width: $width-desktop) {
       background-color: $background_base;
     }

@@ -1,6 +1,8 @@
 .nutrition-demo-slider {
   @media screen and (min-width: $width-table) {
     background-color: $background_demo;
+    margin: 0 -30px;
+    padding: 0 30px;
   }
 }
 
@@ -9,18 +11,55 @@
   justify-content: center;
   margin-left: -20px;
   margin-right: -13px;
+  margin-bottom: 33px;
+
+  @media screen and (min-width: $width-table) {
+    margin: 0 auto;
+    max-width: 708px;
+    margin-top: -172px;
+  }
 }
 
 .nutrition-demo-slider__slide-item {
   overflow: hidden;
   display: none;
+  position: relative;
 
   &_active {
     display: block;
   }
 
   @media screen and (min-width: $width-table) {
-    display: block;
+    display: initial;
+    width: 50%;
+    // базовая ширина, при ее изменении второй слайд подстраивается под первый
+  }
+
+  img {
+    @media screen and (min-width: $width-table) {
+      position: relative;
+      left: 16px;
+    }
+  }
+}
+
+.nutrition-demo-slider__slide-item-skine {
+  // position: relative;
+  top: 9px;
+  left: 7px;
+
+  @media screen and (min-width: $width-table) {
+    flex: 1;
+    top: 0px;
+    left: 0px;
+  }
+
+  img {
+    @media screen and (min-width: $width-table) {
+      position: absolute;
+      left: initial;
+      right: 56px;
+    }
   }
 }
 

@@ -13,19 +13,3 @@
     column-gap: 80px;
   }
 }
-
-.section-programm-food__item {
-  @include noBox;
-  padding: 30px 20px 19px;
-  background-color: $background_footer;
-
-  @media screen and (min-width: $width-table) {
-    padding: 77px 279px 53px 53px;
-  }
-
-  @media screen and (min-width: $width-desktop) {
-    padding: 77px 51px 55px 52px;
-    flex-basis: 570px;
-    flex: 1;
-  }
-}

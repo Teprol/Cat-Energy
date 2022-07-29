@@ -1,7 +1,7 @@
 .nutrition-demo {
   background-color: $background_demo;
   padding-top: 27px;
-  padding-bottom: 39px;
+  padding-bottom: 37px;
 
   @media screen and (min-width: $width-table) {
     background-color: transparent;
@@ -12,6 +12,7 @@
 
   @media screen and (min-width: $width-desktop) {
     border-top: none;
+    padding-top: 0;
   }
 }
 
@@ -19,7 +20,11 @@
   margin-bottom: 33px;
 
   @media screen and (min-width: $width-table) {
-    margin-bottom: 250px;
+    margin-bottom: 254px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    grid-column: span 2;
   }
 }
 
@@ -30,11 +35,16 @@
   @media screen and (min-width: $width-table) {
     margin-bottom: 63px;
   }
+
+  @media screen and (min-width: $width-desktop) {
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
 }
 
 .nutrition-demo__text {
   @include noBox;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   @include font(14px, 18px, $font_base-card);
   font-family: "Arial";
   font-style: normal;
@@ -43,11 +53,12 @@
   @media screen and (min-width: $width-table) {
     @include font(16px, 24px, $font_base);
     margin-bottom: 54px;
+    padding-right: 10px;
   }
 }
 
 .nutrition-demo__stats-list {
-  gap: 39px 31px;
+  gap: 34px 31px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,9 +72,16 @@
 .nutrition-demo__stats-item {
   @include noBox;
   flex-basis: 124px;
+  border: 1px solid $color-border-form2;
+  border-radius: 3px;
+  padding: 13px 0 16px;
+  display: flex;
+  flex-direction: column;
+  height: 56px;
 
   @media screen and (min-width: $width-table) {
     flex-basis: 162px;
+    height: 71px;
   }
 
   &_line {
@@ -75,11 +93,15 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-grow: 1;
+    border: none;
+    height: initial;
 
     @media screen and (min-width: $width-table) {
       flex-grow: 1;
       flex-direction: column;
+      justify-content: space-evenly;
       align-items: flex-end;
       @include font(20px, 20px, $font_base);
     }
@@ -91,9 +113,12 @@
     .nutrition-demo__stats-text {
       font: inherit;
       color: $font_base;
+      position: static;
+      word-spacing: initial;
+      width: initial;
+      margin: 0;
+      padding: 0;
     }
-
-
   }
 }
 
@@ -115,13 +140,25 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+  margin-top: 10px;
+  background-color: $background_demo;
+  background-clip: content-box;
+  padding: 0 22px;
 
   @media screen and (min-width: $width-table) {
     @include font(14px, 14px, $font_base-card);
+    background-color: $background_base;
+    padding: 0 15px;
   }
 }
 
 .nutrition-demo-slider__controls {
   display: flex;
   justify-content: space-evenly;
+}
+
+.nutrition-demo__slider {
+  @media screen and (min-width: $width-desktop) {
+    grid-column: span 2;
+  }
 }
