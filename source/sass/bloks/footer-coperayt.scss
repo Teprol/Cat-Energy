@@ -5,8 +5,8 @@
 
 .footer-coperayt__link {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   &_press:active {
     opacity: $opacity_press;
@@ -24,5 +24,9 @@
         fill: $background_good;
       }
     }
+  }
+
+  @media screen and (min-width: $width-table) {
+    column-gap: 23px;
   }
 }

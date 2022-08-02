@@ -1,6 +1,25 @@
+.section-offer {
+  @media screen and (min-width: $width-table) {
+    padding: 0 223px 526px 111px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 223px 830px 185px 190px;
+    background: url(../img/background/green_cat-desctop.jpg),
+    linear-gradient(to right, $background_base 50%,$background_promo 50%);
+    background-repeat: no-repeat;
+    // background-size: 50% 89.4%; //ну это я пробую ставить проценты вместо пикселей
+    // background-position: 100% 0px;
+    background-size: 720px auto,100%;
+    background-position: right top,center;
+  }
+}
+
 .section-offer__header {
   background: url(../img/background/green_cat.jpg);
-  background-color: $background_good;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: $background_promo;
   @include noBox;
   padding: 27px 0 164px;
 
@@ -83,7 +102,6 @@
 
 .section-offer__link {
   span {
-
     @media screen and (min-width: $width-table) {
       @include font(20px, 20px, $font_ofer-color);
     }

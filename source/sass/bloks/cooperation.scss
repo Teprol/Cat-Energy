@@ -6,6 +6,17 @@
   &_dark {
     background-color: $background_footer;
   }
+
+  @media screen and (min-width: $width-table) {
+    padding-bottom: 61px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 62px 47px 61px 33px;
+    top: 113px;
+    left: 112px;
+    column-gap: 96px;
+  }
 }
 
 .cooperation__text {
@@ -16,6 +27,11 @@
   font-weight: 400;
   text-transform: uppercase;
   flex-grow: 1;
+
+  @media screen and (min-width: $width-table) {
+    @include font(20px, 21px, $font_cooperation);
+    padding-left: 41px;
+  }
 }
 
 .cooperation__addres {
@@ -25,6 +41,19 @@
   font-style: normal;
   font-weight: 400;
   flex-grow: 1;
+
+  @media screen and (min-width: $width-table) {
+    @include font(16px, 20px, $font_base-card);
+    display: flex;
+    text-align: right;
+    padding-right: 43px;
+    flex-direction: column;
+    row-gap: 17px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    text-align: left;
+  }
 }
 
 .cooperation__addres-top {

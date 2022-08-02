@@ -1,7 +1,11 @@
 .footer-bottom {
   // @include noBox;
   margin: 0;
- padding-bottom: 22px;
+  padding-bottom: 22px;
+
+  @media screen and (min-width: $width-table) {
+    padding-bottom: 57px;
+  }
 }
 
 .footer-coperayt__text {
@@ -17,6 +21,12 @@
   padding-bottom: 26px;
   border-bottom: 1px solid $color-border-card;
   text-align: center;
+
+  @media screen and (min-width: $width-table) {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
 }
 
 // .footer-bottom__social {
@@ -26,4 +36,9 @@
 
 .footer-bottom__social {
   margin-bottom: 22px;
+
+  @media screen and (min-width: $width-table) {
+    margin: 0;
+    border-bottom: none;
+  }
 }

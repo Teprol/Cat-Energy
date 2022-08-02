@@ -73,6 +73,8 @@
   font-weight: 400;
   text-transform: uppercase;
 
+  &_hover:hover {}
+
   &_pressed:active {
     opacity: $opacity_press;
   }

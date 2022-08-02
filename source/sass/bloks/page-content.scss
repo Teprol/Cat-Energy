@@ -16,24 +16,19 @@
   margin-bottom: 22px;
 
   @media screen and (min-width: $width-table) {
-    padding: 0 223px 526px 111px;
     margin-bottom: 0;
   }
 
   @media screen and (min-width: $width-desktop) {
-    padding: 223px 830px 265px 190px;
-    background: url(../img/background/green_cat-desctop.jpg);
-    background-repeat: no-repeat;
-    background-size: 50% 89.4%; //ну это я пробую ставить проценты вместо пикселей
-    background-position: 100% 0px;
+    margin-bottom: 81px;
   }
 }
 
-.page-content__content-header {
-  padding-bottom: 41px;
-  border-bottom: 1px solid $color-border-catalog;
-  margin-bottom: 19px;
-}
+// .page-content__content-header {
+//   padding-bottom: 41px;
+//   border-bottom: 1px solid $color-border-catalog;
+//   margin-bottom: 19px;
+// }
 
 .page-content__rage {
   margin-bottom: 25px;

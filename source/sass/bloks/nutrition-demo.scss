@@ -13,6 +13,10 @@
   @media screen and (min-width: $width-desktop) {
     border-top: none;
     padding-top: 0;
+    background: linear-gradient(180deg,
+        $background_base 135px,
+        $background_footer -135px);
+    padding-bottom: 0;
   }
 }
 
@@ -25,6 +29,9 @@
 
   @media screen and (min-width: $width-desktop) {
     grid-column: span 2;
+    padding-top: 71px;
+    padding-right: 125px;
+    margin-bottom: 0;
   }
 }
 
@@ -37,6 +44,7 @@
   }
 
   @media screen and (min-width: $width-desktop) {
+    margin-bottom: 76px;
     grid-row: 1;
     grid-column: 1/-1;
   }
@@ -66,6 +74,12 @@
 
   @media screen and (min-width: $width-table) {
     column-gap: 42px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    justify-content: flex-start;
+    padding-top: 14px;
+    row-gap: 60px;
   }
 }
 
@@ -104,6 +118,12 @@
       justify-content: space-evenly;
       align-items: flex-end;
       @include font(20px, 20px, $font_base);
+    }
+
+    @media screen and (min-width: $width-desktop) {
+      flex-direction: row;
+      justify-content: flex-start;
+      column-gap: 64px;
     }
 
     .nutrition-demo__stats-title {
@@ -149,6 +169,10 @@
     @include font(14px, 14px, $font_base-card);
     background-color: $background_base;
     padding: 0 15px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    background-color: $background_footer;
   }
 }
 

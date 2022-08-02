@@ -1,6 +1,12 @@
 .social {
   padding: 0 0 16px;
   border-bottom: 1px solid $color-border-card;
+
+  @media screen and (min-width: $width-table) {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
 }
 
 .social__list {

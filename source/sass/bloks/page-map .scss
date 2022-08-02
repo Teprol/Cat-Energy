@@ -1,0 +1,9 @@
+.page-map {}
+
+.page-map__map {
+  height: 365px;
+
+  @media screen and (min-width: $width-table) {
+    height: 398px;
+  }
+}
