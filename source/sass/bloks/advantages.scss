@@ -37,6 +37,7 @@
   @media screen and (min-width: $width-desktop) {
     column-gap: 80px;
     grid-template-columns: repeat(auto-fit, 245px);
+    justify-content: center;
   }
 }
 

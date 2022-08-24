@@ -1,10 +1,20 @@
 .content-header {
   padding-top: 27px;
+  border-top: 1px solid $color-border;
+
+  @media screen and (min-width: $width-table) {
+    padding-top: 0;
+    border: none;
+  }
 }
 
 .content-header__title {
-  margin-bottom: 37px;
+  margin: 0 0 37px;
   text-align: left;
+
+  @media screen and (min-width: $width-table) {
+    margin: 0 0 55px;
+  }
 }
 
 .content-header__slogan {
@@ -14,4 +24,14 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+  padding-right: 6px;
+
+  @media screen and (min-width: $width-table) {
+    @include font(20px, 30px, $font_base);
+    padding-right: 278px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding-right: 832px;
+  }
 }

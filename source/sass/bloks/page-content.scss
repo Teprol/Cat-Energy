@@ -24,11 +24,13 @@
   }
 }
 
-// .page-content__content-header {
-//   padding-bottom: 41px;
-//   border-bottom: 1px solid $color-border-catalog;
-//   margin-bottom: 19px;
-// }
+.page-content__content-header {
+  margin-bottom: 38px;
+
+  @media screen and (min-width: $width-table) {
+    margin-bottom: 66px;
+  }
+}
 
 .page-content__rage {
   margin-bottom: 25px;
@@ -42,6 +44,13 @@
 
 .page-content__form-nutrition-program {
   margin-bottom: 32px;
+
+  @media screen and (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    justify-content: space-around;
+  }
 }
 
 .page-content__nutrition-demo {

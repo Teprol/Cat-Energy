@@ -62,4 +62,11 @@
   @media screen and (min-width: $width-desktop) {
     padding: 0 110px;
   }
+
+  &_inc-lft-p {
+    @media screen and (min-width: $width-table) and (max-width: $width-desktop - 1px) {
+      padding-left: 70px;
+      padding-right: 65px;
+    }
+  }
 }

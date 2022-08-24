@@ -6,6 +6,12 @@
   padding: 10.3px 0;
   border: none;
   cursor: pointer;
+  @include font(14px, 18px, $font_ofer-color);
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 
   &_hover:hover {
     background-color: $background_good2;
@@ -18,11 +24,12 @@
   }
 
   span {
-    @include font(14px, 18px, $font_ofer-color);
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
+    // @include font(14px, 18px, $font_ofer-color);
+    // font-family: "Oswald";
+    // font-style: normal;
+    // font-weight: 400;
+    // text-align: center;
+    // text-transform: uppercase;
+    font: inherit;
   }
 }

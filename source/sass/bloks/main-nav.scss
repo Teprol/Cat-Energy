@@ -1,3 +1,6 @@
+.main-nav {
+}
+
 .main-nav__item {
   @include noBox;
 }
@@ -34,7 +37,6 @@
     }
 
     @media screen and (min-width: $width-desktop) {
-      background-color: $background_base;
       bottom: -7px;
     }
   }
@@ -45,7 +47,17 @@
   }
 
   @media screen and (min-width: $width-desktop) {
-    @include font(20px, 30px, $font_ofer-color);
+    @include font(20px, 30px, $font_base);
+  }
+
+  &_font-color_kontrast {
+    @media screen and (min-width: $width-desktop) {
+      color: $font_ofer-color;
+
+      &.main-nav__link_active::after {
+        background-color: $background_base;
+      }
+    }
   }
 }
 

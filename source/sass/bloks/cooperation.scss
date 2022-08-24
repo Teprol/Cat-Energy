@@ -1,19 +1,23 @@
 .cooperation {
-  background-color: $background_base;
-  // padding: 28px 0 26px;
+  padding-top: 28px;
   padding-bottom: 26px;
 
-  &_dark {
-    background-color: $background_footer;
+  &_white {
+    background-color: $background_base;
   }
 
   @media screen and (min-width: $width-table) {
     padding-bottom: 61px;
+
+    &_pg-form {
+      padding-top: 63px;
+      padding-bottom: 58px;
+    }
   }
 
   @media screen and (min-width: $width-desktop) {
     padding: 62px 47px 61px 33px;
-    top: 113px;
+    top: 96px;
     left: 112px;
     column-gap: 96px;
   }
@@ -32,6 +36,12 @@
     @include font(20px, 21px, $font_cooperation);
     padding-left: 41px;
   }
+
+  &_pg-form {
+    @media screen and (min-width: $width-mobily) and (max-width: $width-table) {
+      padding-left: 0;
+    }
+  }
 }
 
 .cooperation__addres {
@@ -49,6 +59,14 @@
     padding-right: 43px;
     flex-direction: column;
     row-gap: 17px;
+
+    &_pg-form {
+      @media screen and (min-width: $width-mobily) and (max-width: $width-table) {
+        padding-right: 7px;
+      }
+
+      row-gap: 21px;
+    }
   }
 
   @media screen and (min-width: $width-desktop) {

@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.social__item {
+  mask: url(../../img/icons/icon_vkontakte.svg);
+}
+
 .social__link {
   &_hover:hover {
     path {

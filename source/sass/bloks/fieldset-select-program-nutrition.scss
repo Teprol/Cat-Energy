@@ -1,5 +1,7 @@
 .fieldset-select-program-nutrition {
-  padding: 28px 0 25px 45px;
+  // padding: 28px 0 25px 45px;
+  padding-top: 28px;
+  padding-bottom: 25px;
   border: 1px solid $color-border-card;
   border-left: none;
   border-right: none;
@@ -9,7 +11,33 @@
   font-weight: 400;
   text-transform: uppercase;
   box-sizing: border-box;
+
+  @media screen and (min-width: $width-table) {
+    @include font(20px, 30px, $font-special-dark-form);
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+.fieldset-select-program-nutrition__container {
+  @media screen and (min-width: $width-table) {
+    border: 1px solid $color-border-form;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+.fieldset-select-program-nutrition__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
 
 .fieldset-select-program-nutrition__item {
+  padding-left: 45px;
+
+  @media screen and (min-width: $width-table) {
+    padding-left: 87px;
+  }
 }

@@ -1,9 +1,9 @@
 .fieldset-coment__title {
-  @include font(24px, 26px, $font_base);
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
   margin-bottom: 37px;
+
+  @media screen and (min-width: $width-table) {
+    margin-bottom: 76px;
+  }
 }
 
 .fieldset-coment__coment {
@@ -16,4 +16,14 @@
   padding: 9px 13.5px;
   width: 100%;
   min-height: 150px;
+  border: 1px solid $color-border-form;
+
+  @media screen and (min-width: $width-table) {
+    @include font(20px, 30px, $font_base-card);
+    padding: 9px 18px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    height: 174px;
+  }
 }
