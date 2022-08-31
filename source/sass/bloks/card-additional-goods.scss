@@ -18,7 +18,11 @@
   @include noBox;
   margin-bottom: 15px;
   display: flex;
+  justify-content: space-between;
   @include font(14px, 14px, $font_base-card);
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
 
   dd,
   dt {

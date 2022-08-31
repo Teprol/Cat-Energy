@@ -6,4 +6,9 @@
   @media screen and (min-width: $width-table) {
     height: 398px;
   }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }

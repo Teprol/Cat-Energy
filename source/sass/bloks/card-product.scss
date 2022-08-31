@@ -13,7 +13,8 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
+  width: 76px;
 }
 
 .card-product__title {
@@ -26,8 +27,26 @@
 .card-product__button {
   box-sizing: border-box;
   width: 100%;
+  padding: 10px 0;
+  @include font(16px, 20px, $font_ofer-color);
 }
 
 .card-product__container {
   margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.card-product__main {
+  width: 140px;
+}
+
+.card-product__container-iamge {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 112px;
+  overflow: hidden;
 }

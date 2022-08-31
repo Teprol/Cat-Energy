@@ -1,7 +1,13 @@
+.range__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
 .range__item {
   box-sizing: border-box;
   border-bottom: 1px solid $color-border-catalog;
-  margin-bottom: 19px;
+  // margin-bottom: 19px;
 
   &:last-child {
     margin: 0;

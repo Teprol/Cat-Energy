@@ -6,10 +6,15 @@
   font-weight: 400;
 }
 
+// .card-product-stat__row {
+//   column-gap: 74px;
+// }
+
 .card-product-stat__description {
   margin: 0;
 }
 
 .card-product-stat__row {
   display: flex;
+  justify-content: space-between;
 }
