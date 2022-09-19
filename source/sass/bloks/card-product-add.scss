@@ -1,7 +1,10 @@
 .card-product-add {
   box-sizing: border-box;
-  padding-top: 70px;
-  padding-bottom: 23px;
+  padding: 70px 20px 23px;
+
+  @media screen and (min-width: $width-table) {
+    padding: 160px 31px 35px;
+  }
 }
 
 .card-product-add__title {
@@ -13,6 +16,12 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: $width-table) {
+    @include font(20px, 22px, $font_cooperation);
+    margin-bottom: 23px;
+    width: 141px;
+  }
 }
 
 .card-product-add__text {
@@ -23,6 +32,12 @@
   font-style: normal;
   font-weight: 400;
   text-align: center;
+
+  @media screen and (min-width: $width-table) {
+    @include font(16px, 18px, $font_base-card);
+    margin-bottom: 87px;
+    width: 183px;
+  }
 }
 
 .card-product-add__button {
@@ -40,6 +55,7 @@
 
   &_pressed:active {
     background-color: $color-border-catalog;
+
     span {
       opacity: $opacity_press;
     }

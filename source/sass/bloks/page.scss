@@ -1,4 +1,5 @@
-.page {}
+.page {
+}
 
 .page__body {
   @include noBox;
@@ -27,7 +28,6 @@
   margin-bottom: 0;
 
   &_form {
-
     @media screen and (min-width: $width-table) {
       margin-bottom: 40px;
     }
@@ -37,12 +37,21 @@
       margin-bottom: 50px;
     }
   }
+
+  &_catalog {
+    margin-bottom: 33px;
+
+    @media screen and (min-width: $width-table) {
+      margin-bottom: 76px;
+    }
+
+    @media screen and (min-width: $width-desktop) {
+      padding-top: 188px;
+      margin-bottom: 87px;
+    }
+  }
 }
 
 .page__page-footer {
   grid-row: -1/-2;
-}
-
-.page__page-content_catalog {
-  margin-bottom: 33px;
 }

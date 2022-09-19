@@ -6,13 +6,22 @@
     background-color: $background_base;
   }
 
-  @media screen and (min-width: $width-table) {
-    padding-bottom: 61px;
-
-    &_pg-form {
+  &_pg-form {
+    @media screen and (min-width: $width-table) {
       padding-top: 63px;
       padding-bottom: 58px;
     }
+  }
+
+  &_padding_increase {
+    @media screen and (min-width: $width-table) {
+      padding-top: 63px;
+
+    }
+  }
+
+  @media screen and (min-width: $width-table) {
+    padding-bottom: 61px;
   }
 
   @media screen and (min-width: $width-desktop) {
@@ -20,6 +29,7 @@
     top: 96px;
     left: 112px;
     column-gap: 96px;
+    background-color: $background_base
   }
 }
 

@@ -22,6 +22,12 @@
   @media screen and (min-width: $width-desktop) {
     margin-bottom: 60px;
   }
+
+  &_margin_increase {
+    @media screen and (min-width: $width-table) {
+      margin-bottom: 56px;
+    }
+  }
 }
 
 .page-footer__cooperation {

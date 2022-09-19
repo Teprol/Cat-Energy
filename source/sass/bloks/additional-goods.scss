@@ -1,5 +1,4 @@
-.additional-goods {
-}
+.additional-goods {}
 
 .additional-goods__title {
   @include noBox;
@@ -10,6 +9,18 @@
   font-weight: 400;
   padding-bottom: 35px;
   border-bottom: 1px solid $color-border-form2;
+
+  @media screen and (min-width: $width-table) {
+    @include font(36px, 36px);
+    border: none;
+    padding: 0 38px 35px;
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 0;
+    width: 100%;
+  }
 }
 
 .additional-goods__item {
@@ -18,18 +29,64 @@
   &:last-child {
     margin: 0;
   }
+
+  @media screen and (min-width: $width-table) {
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .additional-goods__list {
   margin-bottom: 39px;
+
+  @media screen and (min-width: $width-table) {
+    border: 1px solid $color-border-form2;
+    padding: 25px 0 0;
+    margin-bottom: 70px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    border: none;
+    border-top: 1px solid $color-border-form2;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .card-additional-goods__button {
-  @include font (16px, 20px, $font_ofer-color);
+  @include font(16px, 20px, $font_ofer-color);
 }
 
 .additional-goods__gift-offer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: $width-desktop) {
+    width: 245px;
+  }
+}
+
+.additional-goods__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: $width-table) {
+    row-gap: 11px;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    margin: 0;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
 }

@@ -69,4 +69,12 @@
       padding-right: 65px;
     }
   }
+
+  &_page_catalog {
+    @media screen and (max-width: $width-table - 1px) {
+      min-width: initial;
+      padding: initial;
+      margin: initial;
+    }
+  }
 }

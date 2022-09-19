@@ -6,12 +6,12 @@
   @media screen and (min-width: $width-desktop) {
     padding: 223px 830px 185px 190px;
     background: url(../img/background/green_cat-desctop.jpg),
-    linear-gradient(to right, $background_base 50%,$background_promo 50%);
+      linear-gradient(to right, $background_base 50%, $background_promo 50%);
     background-repeat: no-repeat;
     // background-size: 50% 89.4%; //ну это я пробую ставить проценты вместо пикселей
     // background-position: 100% 0px;
-    background-size: 720px auto,100%;
-    background-position: right top,center;
+    background-size: 720px auto, 100%;
+    background-position: right top, center;
   }
 }
 

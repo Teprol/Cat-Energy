@@ -1,4 +1,5 @@
-.page-content {}
+.page-content {
+}
 
 .page-content__section-programm-food {
   margin-bottom: 29px;
@@ -38,10 +39,28 @@
       margin-bottom: 8px;
     }
   }
+
+  &_margin-bottom_164 {
+    @media screen and (min-width: $width-table) {
+      margin-bottom: 164px;
+    }
+  }
+}
+
+.page-content__title {
+  @include noBox;
 }
 
 .page-content__rage {
   margin-bottom: 25px;
+
+  @media screen and (min-width: $width-table) {
+    margin-bottom: 68px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    margin-bottom: 75px;
+  }
 }
 
 .page-content__advantages {
@@ -68,5 +87,14 @@
     column-gap: 80px;
     grid-template-columns: repeat(auto-fit, 245px);
     grid-template-rows: repeat(2, auto);
+  }
+}
+
+.page-content__additional-goods {
+  @media screen and (min-width: $width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 38px;
   }
 }

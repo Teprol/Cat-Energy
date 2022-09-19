@@ -3,6 +3,22 @@
   padding: 186px 0px 43px 0px;
   background-color: $background_good;
   background-image: url("../img/background/gift-photo-mobile 1.jpg");
+
+  @media screen and (min-width: $width-table) {
+    padding: 73px 0px 67px 0px;
+    background-position: 14px -346px;
+    background-size: cover;
+  }
+
+  // @media screen and (min-width: $width-table) {
+  //   background-position: -29px -292px;
+  // }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 142px 0px 0px 0px;
+    background-position: -28px -300px;
+  }
+
 }
 
 .gift-offer__text {
@@ -12,4 +28,14 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
+
+  @media screen and (min-width: $width-table) {
+    text-align: left;
+    padding-left: 299px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding-left: 0;
+    text-align: center;
+  }
 }

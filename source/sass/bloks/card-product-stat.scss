@@ -4,11 +4,11 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-}
 
-// .card-product-stat__row {
-//   column-gap: 74px;
-// }
+  @media screen and (min-width: $width-table) {
+    @include font(16px, 16px, $font_base-card);
+  }
+}
 
 .card-product-stat__description {
   margin: 0;
@@ -17,4 +17,10 @@
 .card-product-stat__row {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: $width-table) {
+    padding-bottom: 7px;
+    border-bottom: 1px solid $color-border-form2;
+    margin-bottom: 8px;
+  }
 }
