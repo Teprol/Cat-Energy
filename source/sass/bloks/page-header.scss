@@ -19,13 +19,24 @@
   width: 20px;
   height: 20px;
   background-color: transparent;
-  background-image: url("../img/background/Logo_mobile.svg");
+  // background-image: url("../img/background/Logo_mobile.svg");
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $width-table) {
     display: none;
   }
+
+  &_close {
+    background-image: url("../img/icons/nav-menu-close.svg");
+  }
+
+  &_open {
+    background-image: url("../img/icons/nav-menu-open.svg");
+    width: 24px;
+  }
+
 }
 
 .page-header__container {

@@ -5,6 +5,10 @@
     padding: 0 30px 74px;
   }
 
+  @media screen and (min-width: $width-table) {
+    padding: 0 30px 69px;
+  }
+
   @media screen and (min-width: $width-desktop) {
     background-color: transparent;
   }
@@ -21,13 +25,14 @@
     margin: 0 auto;
     max-width: 708px;
     margin-top: -172px;
-    margin-bottom: 21px;
+    margin-bottom: 17px;
   }
 
   @media screen and (min-width: $width-desktop) {
     width: 709px;
     margin-left: -69px;
     margin-top: -193px;
+    margin-bottom: 33px;
   }
 }
 
@@ -89,4 +94,105 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+
+  @media screen and (min-width: $width-table) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $color-border-form2;
+  }
+
+  &:hover {
+    @media screen and (min-width: $width-table) {
+      border-bottom: 1px solid $font_base-card;
+    }
+  }
+
+  &:active {
+    @media screen and (min-width: $width-table) {
+      border: none;
+    }
+  }
+}
+
+.nutrition-demo-slider__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+
+  @media screen and (min-width: $width-table) {
+    column-gap: 24px;
+  }
+}
+
+.nutrition-demo-slider__controls-rangs {
+  width: 84px;
+  height: 14px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background-color: $background_base;
+  border: 1px solid $color-border-form2;
+  padding: 3px 6px;
+  display: flex;
+
+  @media screen and (min-width: $width-table) {
+    width: 426px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $background_slider-range;
+    display: flex;
+    padding: unset;
+    border: unset;
+    margin: unset;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_became {
+    flex-direction: row-reverse;
+  }
+}
+
+.nutrition-demo-slider__controls-inside-rangs {
+  width: 35px;
+  height: 6px;
+  background-color: $background_good;
+  border-radius: 6px;
+
+  @media screen and (min-width: $width-table) {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $background_base;
+    border: 1px solid $color-border-form2;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    display: flex;
+  }
+
+  &::after {
+    @media screen and (min-width: $width-table) {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $background_good;
+      margin: auto auto;
+    }
+  }
+
+  &:hover {
+    @media screen and (min-width: $width-table) {
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    }
+  }
+
+  &:active {
+    @media screen and (min-width: $width-table) {
+      border-color: $background_good;
+    }
+  }
 }

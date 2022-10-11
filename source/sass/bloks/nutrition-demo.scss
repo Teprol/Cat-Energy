@@ -6,7 +6,7 @@
   @media screen and (min-width: $width-table) {
     background-color: transparent;
     padding-top: 43px;
-    padding-bottom: 39px;
+    padding-bottom: 37px;
     border-top: 1px solid $color-border;
   }
 
@@ -16,7 +16,7 @@
     background: linear-gradient(180deg,
         $background_base 135px,
         $background_footer -135px);
-    padding-bottom: 18px;
+    padding-bottom: 0px;
   }
 }
 
@@ -174,11 +174,6 @@
   @media screen and (min-width: $width-desktop) {
     background-color: $background_footer;
   }
-}
-
-.nutrition-demo-slider__controls {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .nutrition-demo__slider {

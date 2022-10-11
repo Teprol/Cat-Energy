@@ -12,7 +12,7 @@
 }
 
 .card-product__link {
-  display: block;
+  display: flex;
   box-sizing: border-box;
   text-decoration: none;
   @include font(16px, 20px, $font-special-dark-form);
@@ -22,6 +22,7 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   width: 76px;
+  word-break: break-word;
 
   @media screen and (min-width: $width-table) {
     width: 136px;
@@ -80,6 +81,7 @@
 .card-product__container {
   margin-bottom: 13px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 10px;
 

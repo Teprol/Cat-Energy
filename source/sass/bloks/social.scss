@@ -14,16 +14,43 @@
   justify-content: center;
   column-gap: 32px;
   align-items: center;
+
+  @media screen and (min-width: $width-table) {
+    column-gap: 22px;
+    position: relative;
+    left: 15px;
+  }
 }
 
 .social__item {
-  mask: url(../../img/icons/icon_vkontakte.svg);
+  @media screen and (min-width: $width-table) {
+    &:nth-last-of-type(1) {
+      svg {
+        width: 28px;
+        height: 33px;
+      }
+    }
+
+    &:nth-last-of-type(2) {
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &:nth-last-of-type(3) {
+      svg {
+        width: 30px;
+        height: 22px;
+      }
+    }
+  }
 }
 
 .social__link {
   &_hover:hover {
     path {
-      fill: $background_good;
+      stroke: $background_good;
     }
   }
 

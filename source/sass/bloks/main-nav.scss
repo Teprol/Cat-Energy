@@ -1,4 +1,10 @@
 .main-nav {
+
+  &_close {
+    @media screen and (max-width: $width-table - 1) {
+      display: none;
+    }
+  }
 }
 
 .main-nav__item {
