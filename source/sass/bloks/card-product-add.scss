@@ -1,9 +1,31 @@
 .card-product-add {
   box-sizing: border-box;
   padding: 70px 20px 23px;
+  position: relative;
 
   @media screen and (min-width: $width-table) {
     padding: 160px 31px 35px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/plus.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 17px;
+    left: calc(50% - 15px);
+
+    @media screen and (min-width: $width-table) {
+      width: 60px;
+      height: 60px;
+      left: calc(50% - 30px);
+      top: 53px;
+    }
   }
 }
 

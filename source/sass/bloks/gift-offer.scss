@@ -3,6 +3,7 @@
   padding: 186px 0px 43px 0px;
   background-color: $background_good;
   background-image: url("../img/background/gift-photo-mobile 1.jpg");
+  position: relative;
 
   @media screen and (min-width: $width-table) {
     padding: 73px 0px 67px 0px;
@@ -10,15 +11,30 @@
     background-size: cover;
   }
 
-  // @media screen and (min-width: $width-table) {
-  //   background-position: -29px -292px;
-  // }
-
   @media screen and (min-width: $width-desktop) {
     padding: 142px 0px 0px 0px;
     background-position: -28px -300px;
   }
 
+  &::after {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    position: absolute;
+    background-image: url(../img/icons/podarok.svg);
+    background-position: center;
+    background-size: contain;
+    top: 57px;
+
+    @media screen and (min-width: $width-table) {
+      left: 79px;
+    }
+
+    @media screen and (min-width: $width-desktop) {
+      left: 85px;
+    }
+  }
 }
 
 .gift-offer__text {

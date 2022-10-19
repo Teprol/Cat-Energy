@@ -1,5 +1,5 @@
 .fieldset-coment__title {
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 
   @media screen and (min-width: $width-table) {
     margin-bottom: 76px;
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 9px 13.5px;
+  padding: 8px 13.5px;
   width: 100%;
   min-height: 150px;
   border: 1px solid $color-border-form;
@@ -21,6 +21,8 @@
   @media screen and (min-width: $width-table) {
     @include font(20px, 30px, $font_base-card);
     padding: 9px 18px;
+    width: 631px;
+    height: 173px;
   }
 
   @media screen and (min-width: $width-desktop) {

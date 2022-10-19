@@ -28,13 +28,13 @@
   @media screen and (min-width: $width-table) {
     row-gap: 90px;
     column-gap: 60px;
-    grid-template-columns: repeat(auto-fit, 132px);
+    grid-template-columns: repeat(4, minmax(132px, 1fr));
     justify-content: center;
   }
 
   @media screen and (min-width: $width-desktop) {
     column-gap: 80px;
-    grid-template-columns: repeat(auto-fit, 245px);
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     justify-content: center;
   }
 }
@@ -58,19 +58,22 @@
   position: relative;
 
   &::after {
-    counter-increment: section;
-    content: counter(section);
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 280px;
-    text-align: center;
-    color: $background_footer;
-    position: absolute;
-    top: -38px;
-    left: 119px;
-    z-index: -1;
+    @media screen and (min-width: $width-table) {
+      counter-increment: section;
+      content: counter(section);
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: $background_footer;
+      position: absolute;
+      top: -38px;
+      left: 119px;
+      z-index: -1;
+    }
+
   }
 
   // @media screen and (min-width: $width-table) {

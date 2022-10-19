@@ -39,7 +39,9 @@
           background-size: cover;
           width: 200px;
           height: 211px;
-          left: 392px;
+          // left: 392px;
+          left: unset;
+          right: -217px;
           top: 5px;
         }
 
@@ -62,7 +64,9 @@
           background-size: cover;
           width: 268px;
           height: 200px;
-          left: 358px;
+          // left: 358px;
+          right: -282px;
+          left: unset;
           top: 15px;
         }
 

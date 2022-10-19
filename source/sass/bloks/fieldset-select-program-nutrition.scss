@@ -1,15 +1,18 @@
 .fieldset-select-program-nutrition {
-  padding-top: 28px;
-  padding-bottom: 25px;
-  border: 1px solid $color-border-card;
-  border-left: none;
-  border-right: none;
+  // padding-top: 28px;
+  // padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  // border: 1px solid $color-border-card;
+  // border-left: none;
+  // border-right: none;
   @include font(16px, 18px, $font-special-dark-form);
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   box-sizing: border-box;
+  position: relative;
 
   @media screen and (min-width: $width-table) {
     @include font(20px, 30px, $font-special-dark-form);
@@ -17,26 +20,150 @@
     padding-bottom: 0;
     border: none;
   }
+
+  &::before {
+    @media screen and (max-width: $width-table - 1) {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100vw;
+      background-color: $color-border-card;
+      position: absolute;
+      left: -20px;
+      top: -1px;
+    }
+  }
+
+  &::after {
+    @media screen and (max-width: $width-table - 1) {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100vw;
+      background-color: $color-border-card;
+      position: absolute;
+      left: -20px;
+      bottom: -2px;
+    }
+  }
 }
 
 .fieldset-select-program-nutrition__container {
   @media screen and (min-width: $width-table) {
     border: 1px solid $color-border-form;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
 .fieldset-select-program-nutrition__list {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  // row-gap: 24px;
+  row-gap: 13px;
 }
 
 .fieldset-select-program-nutrition__item {
-  padding-left: 45px;
+  position: relative;
 
   @media screen and (min-width: $width-table) {
-    padding-left: 87px;
+    padding-left: 28px;
+  }
+
+  //*актив состояние инпута для лэйбла
+  //сделал так т.к отдельно лэйбл с инпутом не будут от этого элементом БЭМ не нарушил
+  // input:checked ~ label::after {
+  //   content: "";
+  //   display: block;
+  //   width: 14px;
+  //   height: 14px;
+  //   border-radius: 50%;
+  //   background-color: $background_promo;
+  //   position: absolute;
+  //   top: 8px;
+  //   left: 8px;
+
+  //   @media screen and (min-width: $width-table) {
+  //     width: 18px;
+  //     height: 18px;
+  //     top: 11px;
+  //     left: 40px;
+  //   }
+  // }
+
+  //сам лэйбл с его псевдоэлементом
+  // label {
+  //   display: flex;
+  //   align-items: center;
+  //   column-gap: 15px;
+  //   cursor: pointer;
+
+  //   @media screen and (min-width: $width-table) {
+  //     column-gap: 20px;
+  //   }
+
+  //   &::before {
+  //     content: "";
+  //     // display: block;
+  //     width: 30px;
+  //     height: 30px;
+  //     border-radius: 50%;
+  //     border: 1px solid $color-border-form2;
+  //     // position: absolute;
+  //     top: -6px;
+  //     left: 1px;
+
+  //     @media screen and (min-width: $width-table) {
+  //       width: 40px;
+  //       height: 40px;
+  //     }
+  //   }
+  // }
+}
+
+.fieldset-select-program-nutrition__input {
+  &_checked:checked ~ .fieldset-select-program-nutrition__label::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $background_promo;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    @media screen and (min-width: $width-table) {
+      width: 18px;
+      height: 18px;
+      top: 11px;
+      left: 40px;
+    }
+  }
+}
+
+.fieldset-select-program-nutrition__label {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  cursor: pointer;
+
+  @media screen and (min-width: $width-table) {
+    column-gap: 20px;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $color-border-form2;
+    top: -6px;
+    left: 1px;
+
+    @media screen and (min-width: $width-table) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

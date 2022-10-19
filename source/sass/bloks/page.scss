@@ -26,6 +26,7 @@
 .page__page-content {
   grid-row: 2/3;
   margin-bottom: 0;
+  overflow: hidden;
 
   &_form {
     @media screen and (min-width: $width-table) {

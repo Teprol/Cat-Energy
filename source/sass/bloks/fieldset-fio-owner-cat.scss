@@ -4,6 +4,12 @@
   @media screen and (min-width: $width-table) {
     margin-bottom: 76px;
   }
+
+  .break-stroke {
+    @media screen and (min-width: $width-table) {
+      display: none;
+    }
+  }
 }
 
 .fieldset-fio-owner-cat__list {

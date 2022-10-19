@@ -1,14 +1,17 @@
-.additional-goods {}
+.additional-goods {
+}
 
 .additional-goods__title {
-  @include noBox;
-  margin-bottom: 15px;
+  margin: 0;
   @include font(24px, 24px, $font_base);
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  padding-bottom: 35px;
-  border-bottom: 1px solid $color-border-form2;
+  // padding-bottom: 35px;
+  // margin-bottom: 15px;
+  // border-bottom: 1px solid $color-border-form2;
+  margin-bottom: 35px;
+  display: inline-block;
 
   @media screen and (min-width: $width-table) {
     @include font(36px, 36px);
@@ -21,10 +24,27 @@
     padding: 0;
     width: 100%;
   }
+
+  & .horizont-line::after,
+  & .horizont-line::before {
+    @media screen and (min-width: $width-desktop) {
+      top: 32px;
+    }
+  }
 }
 
 .additional-goods__item {
   margin-bottom: 12px;
+
+  &:first-child {
+    padding-top: 15px;
+    border-top: 1px solid $color-border-form2;
+
+    @media screen and (min-width: $width-table) {
+      padding-top: unset;
+      border-top: unset;
+    }
+  }
 
   &:last-child {
     margin: 0;
@@ -88,5 +108,4 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
 }

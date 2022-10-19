@@ -17,23 +17,27 @@
   font-weight: 400;
   text-transform: uppercase;
   display: flex;
-  flex-direction: column;
-  row-gap: 12px;
+  flex-wrap: wrap;
+  row-gap: 13px;
 
   @media screen and (min-width: $width-table) {
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     row-gap: 33px;
   }
 }
 
 .fieldset-add-info__item {
   display: flex;
+  flex-basis: 200px;
+  flex-grow: 1;
+  position: relative;
 
   @media screen and (min-width: $width-table) {
     @include font(20px, 30px, $font_base);
     width: 289px;
+    flex-basis: unset;
+    flex-grow: unset;
   }
 
   @media screen and (min-width: $width-desktop) {
@@ -41,10 +45,34 @@
   }
 }
 
+.fieldset-add-info__checkbox {
+  &_checked:checked ~ .fieldset-add-info__item-text::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 10px;
+    border: 2px solid $background_good;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(312deg);
+    position: absolute;
+    top: 8px;
+    left: 7px;
+
+    @media screen and (min-width: $width-table) {
+      transform: rotate(310deg);
+      position: absolute;
+      top: 11px;
+      left: 12px;
+    }
+  }
+}
+
 .fieldset-add-info__item-text {
   display: flex;
   align-items: center;
   column-gap: 16px;
+  cursor: pointer;
 
   @media screen and (min-width: $width-table) {
     column-gap: 18px;
@@ -54,6 +82,7 @@
     content: "";
     width: 30px;
     height: 30px;
+    border: 1px solid $color-border-form2;
 
     @media screen and (min-width: $width-table) {
       width: 40px;
