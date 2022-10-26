@@ -23,6 +23,14 @@
   @include noBox;
   padding: 27px 0 164px;
 
+  @media (min-resolution: 2dppx) {
+    background: url(../img/background/green_cat@x2.jpg);
+    background-color: $background_promo;
+    background-repeat: no-repeat;
+    background-position: 61%;
+    background-size: 588px;
+  }
+
   @media screen and (min-width: $width-table) {
     background: none;
     padding: 0;

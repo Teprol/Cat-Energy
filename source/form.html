@@ -11,6 +11,12 @@
   <title>Подбор программы питания</title>
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon"/>
+  <link rel="icon" href="img/favicons/favicon16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/favicons/apple.png" />
+  <link rel="mask-icon" href="img/favicons/maskfavicon.svg" color="#111">
+  <link rel="manifest">
 </head>
 
 <body class="page__body">
@@ -22,9 +28,11 @@
         <a class="page-header__logo logo logo_hover logo_press" href="index.html"
           aria-label="Ссылка на главную страницу">
           <picture class="picture">
-            <source srcset="img/content/desctop/logo-desktop.png" media="(min-width: 1439px)" width="202" height="59" />
-            <source srcset="img/content/tablet/logo-tablet.png" media="(min-width: 766px)" width="174" height="52" />
-            <img src="img/content/mobile/Group8.png" alt="Логотип Cat Energy" width="197" height="38" />
+            <source srcset="img/content/desctop/logo-desktop.svg" media="(min-width: 1439px)" width="202" height="59" />
+            <source srcset="img/content/tablet/logo-tablet.svg" media="(min-width: 766px)" width="174" height="52" />
+            <img src="img/content/mobile/logo-mobile.png"
+              srcset="img/content/mobile/logo-mobile@x2.png 2x, img/content/mobile/logo-mobile@x3.png 3x, img/content/mobile/logo-mobile@x4.png 4x, img/content/mobile/logo-mobile@x5.png 5x"
+              alt="Логотип Cat Energy" width="197" height="38" />
           </picture>
         </a>
         <button class="page-header__button-nav page-header__button-nav_close" type="button"
@@ -90,25 +98,30 @@
           </legend>
           <ul class="fieldset-select-program-nutrition__list list">
             <li class="fieldset-select-program-nutrition__item">
-              <input class="fieldset-select-program-nutrition__input fieldset-select-program-nutrition__input_checked  input-disabled input-focus visibalitihidden" id="losing-weight" type="radio" name="выбор_программы_питания"
-                value="похудение" checked />
+              <input
+                class="fieldset-select-program-nutrition__input fieldset-select-program-nutrition__input_checked  input-disabled input-focus visibalitihidden"
+                id="losing-weight" type="radio" name="выбор_программы_питания" value="похудение" checked />
               <label class="fieldset-select-program-nutrition__label label-hover" for="losing-weight">похудение</label>
             </li>
             <li class="fieldset-select-program-nutrition__item">
-              <input class="fieldset-select-program-nutrition__input  fieldset-select-program-nutrition__input_checked  input-disabled input-focus visibalitihidden" id="Mass-gain" type="radio" name="выбор_программы_питания"
-                value="Набор массы" />
+              <input
+                class="fieldset-select-program-nutrition__input  fieldset-select-program-nutrition__input_checked  input-disabled input-focus visibalitihidden"
+                id="Mass-gain" type="radio" name="выбор_программы_питания" value="Набор массы" />
               <label class="fieldset-select-program-nutrition__label label-hover" for="Mass-gain">Набор массы</label>
             </li>
             <li class="fieldset-select-program-nutrition__item">
-              <input class="fieldset-select-program-nutrition__input  fieldset-select-program-nutrition__input_checked  input-disabled input-focus visibalitihidden" id="advice" type="radio" name="выбор_программы_питания"
-                value="Не знаю (Нужен ваш совет)" />
-              <label class="fieldset-select-program-nutrition__label label-hover" for="advice">Не знаю (Нужен ваш совет)</label>
+              <input
+                class="fieldset-select-program-nutrition__input  fieldset-select-program-nutrition__input_checked  input-disabled input-focus visibalitihidden"
+                id="advice" type="radio" name="выбор_программы_питания" value="Не знаю (Нужен ваш совет)" />
+              <label class="fieldset-select-program-nutrition__label label-hover" for="advice">Не знаю (Нужен ваш
+                совет)</label>
             </li>
           </ul>
         </div>
       </fieldset>
       <fieldset class="form-nutrition-program__fio-owner-cat fieldset-fio-owner-cat fieldset ">
-        <legend class="legend fieldset-fio-owner-cat__title horizont-line">Контактные данные <br class="break-stroke">(владельца кота)</legend>
+        <legend class="legend fieldset-fio-owner-cat__title horizont-line">Контактные данные <br
+            class="break-stroke">(владельца кота)</legend>
         <ul class="fieldset-fio-owner-cat__list list">
           <li class="fieldset-fio-owner-cat__item">
             <label class="fieldset-fio-owner-cat__contacts" for="owner-mail">E-mail:*</label>
@@ -152,21 +165,27 @@
         <legend class="legend fieldset-add-info__title horizont-line">Дополнительно</legend>
         <ul class="fieldset-add-info__list list">
           <li class="fieldset-add-info__item">
-            <input class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden" type="checkbox" id="no-sugar"
-              name="сахарозаменитель" checked />
+            <input
+              class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden"
+              type="checkbox" id="no-sugar" name="сахарозаменитель" checked />
             <label class="fieldset-add-info__item-text label-hover" for="no-sugar">сахарозаменитель</label>
           </li>
           <li class="fieldset-add-info__item">
-            <input class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden" type="checkbox" id="woter"
-              name="питьевая вода" />
+            <input
+              class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden"
+              type="checkbox" id="woter" name="питьевая вода" />
             <label class="fieldset-add-info__item-text label-hover" for="woter">питьевая вода</label>
           </li>
           <li class="fieldset-add-info__item">
-            <input class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden" type="checkbox" id="milk" name="молоко" />
+            <input
+              class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden"
+              type="checkbox" id="milk" name="молоко" />
             <label class="fieldset-add-info__item-text label-hover" for="milk">молоко</label>
           </li>
           <li class="fieldset-add-info__item">
-            <input class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden" type="checkbox" id="vitamins" name="витамины" />
+            <input
+              class="fieldset-add-info__checkbox fieldset-add-info__checkbox_checked input-disabled input-focus visibalitihidden"
+              type="checkbox" id="vitamins" name="витамины" />
             <label class="fieldset-add-info__item-text label-hover" for="vitamins">витамины</label>
           </li>
         </ul>
@@ -213,7 +232,7 @@
       <!-- <div class="wrapper"> -->
       <div class="footer-bottom__logo">
         <a class="footer-bottom__link logo-footer logo-footer_hover logo-footer_press" href="#">
-          <img src="img/content/footer-logo2.png" alt="Логотип Cat Energy текстом в подвале сайта" width="128"
+          <img src="img/content/footer-logo2.svg" alt="Логотип Cat Energy текстом в подвале сайта" width="128"
             height="24" />
         </a>
       </div>
