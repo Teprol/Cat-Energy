@@ -71,6 +71,14 @@
   }
 }
 
+.card-product__img {
+  img {
+    @media (min-resolution: 2dppx) {
+      object-fit: none;
+    }
+  }
+}
+
 .card-product__button {
   box-sizing: border-box;
   width: 100%;
