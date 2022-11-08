@@ -48,9 +48,11 @@
 }
 
 .social__link {
+  color: #666;
+
   &_hover:hover {
-    path {
-      stroke: $background_good;
+    svg {
+      color: $background_good;
     }
   }
 
@@ -59,8 +61,8 @@
       opacity: $opacity_press;
     }
 
-    path {
-      fill: $background_good;
+    svg {
+      color: $background_good;
     }
   }
 }

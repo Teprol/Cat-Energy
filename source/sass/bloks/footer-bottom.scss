@@ -10,7 +10,7 @@
 
 .footer-coperayt__text {
   @include noBox;
-  @include font(16px, 18px, $font_cooperation);
+  @include font(16px, 18px, $font_base-card);
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;

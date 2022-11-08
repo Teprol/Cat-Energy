@@ -1,5 +1,6 @@
 .input {
   border: 1px solid $color-border-form;
+  color: $font_base-card;
 
   &_hover:hover {
     border: 1px solid $color-border-form2;
@@ -8,16 +9,16 @@
   &_focus:focus {
     border: 2px solid $font_base-card;
 
-    ~ svg path {
-      stroke: $background_good;
+    ~svg {
+      color: $background_good;
     }
   }
 
   &_error:invalid {
     border: 2px solid $error;
 
-    ~ svg path {
-      stroke: $error;
+    ~svg {
+      color: $error;
     }
   }
 }
