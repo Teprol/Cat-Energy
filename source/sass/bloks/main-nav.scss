@@ -70,7 +70,15 @@
 .main-nav__list {
   @media screen and (min-width: $width-table) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: end;
+    column-gap: 35px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    justify-content: row;
+    column-gap: 34px;
   }
 }
 

@@ -36,11 +36,13 @@
 }
 
 .fieldset-fio-owner-cat__contacts {
-  flex: 1 0 auto;
+  // flex: 1 0 auto;
+  word-break: break-all;
 }
 
 .fieldset-fio-owner-cat__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 11px;
   position: relative;
@@ -66,6 +68,8 @@
   display: flex;
   align-items: center;
   width: 100%;
+  flex: 1;
+  min-width: 150px;
 
   svg {
     position: absolute;

@@ -91,6 +91,7 @@
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
+  word-break: break-all;
 
   &::before {
     content: "";

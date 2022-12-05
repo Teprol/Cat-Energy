@@ -23,6 +23,7 @@
 
 .fieldset-cat-info__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 14px;
 
@@ -33,7 +34,7 @@
 
 .fieldset-cat-info__label {
   // margin-right: 14px;
-  flex: 1 0 auto;
+  overflow-wrap: break-word;
 }
 
 .fieldset-cat-info__input-text {
@@ -42,6 +43,8 @@
   padding: 12px 15px 13px;
   border: 1px solid $color-border-form;
   width: 100%;
+  min-width: 172px;
+  flex: 1;
   font: inherit;
 
   @media screen and (min-width: $width-table) {

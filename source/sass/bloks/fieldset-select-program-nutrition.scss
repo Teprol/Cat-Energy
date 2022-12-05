@@ -58,6 +58,7 @@
 
 .fieldset-select-program-nutrition__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   // row-gap: 24px;
   row-gap: 13px;
@@ -144,6 +145,7 @@
 
 .fieldset-select-program-nutrition__label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 15px;
   cursor: pointer;

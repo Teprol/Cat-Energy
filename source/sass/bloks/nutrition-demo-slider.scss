@@ -119,12 +119,17 @@
 
 .nutrition-demo-slider__controls {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 15px;
 
   @media screen and (min-width: $width-table) {
     column-gap: 24px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    flex-wrap: nowrap;
   }
 }
 
